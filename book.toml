@@ -1,0 +1,7 @@
+[book]
+title = "Git Tutorial"
+authors = ["Dantae An", "Pyeongseok Oh"]
+description = "UPnL 신입회원을 위한 Git 튜토리얼"
+language = "ko"
+multilingual = false
+src = "src"
