@@ -283,7 +283,7 @@
      1. Create a merge commit (기본값)
      2. Squash and merge
      3. Rebase and merge
-   * 자세한 내용은 [여기](https://nuritech.tistory.com/33)를 참조
+   * 자세한 내용은 [여기(공식 문서)](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/about-merge-methods-on-github) 또는 [여기(한글 문서)](https://nuritech.tistory.com/33)를 참조
 
 ### 8. 잘못된 변경사항을 되돌리는 법
 * `git stash` 또는 `git reset --hard` 같은 명령들이 존재한다.
