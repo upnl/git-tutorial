@@ -3,7 +3,8 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>README - Git Tutorial</title>
+        <title>Git Tutorial</title>
+        <meta name="robots" content="noindex" />
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="UPnL 신입회원을 위한 Git 튜토리얼">
@@ -75,7 +76,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html" class="active">README</a></li><li class="chapter-item expanded affix "><a href="Install-Windows.html">Install-Windows</a></li><li class="chapter-item expanded affix "><a href="SSH.html">SSH</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">README</a></li><li class="chapter-item expanded affix "><a href="Install-Windows.html">Install-Windows</a></li><li class="chapter-item expanded affix "><a href="SSH.html">SSH</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -137,48 +138,48 @@
                         <h1 id="git-명령어-안내"><a class="header" href="#git-명령어-안내">Git 명령어 안내</a></h1>
 <h2 id="목차"><a class="header" href="#목차">목차</a></h2>
 <ul>
-<li><a href="#git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%95%88%EB%82%B4">Git 명령어 안내</a>
+<li><a href="index.html#git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%95%88%EB%82%B4">Git 명령어 안내</a>
 <ul>
-<li><a href="#%EB%AA%A9%EC%B0%A8">목차</a></li>
-<li><a href="#%EA%B8%B0%EB%B3%B8-%EA%B0%9C%EB%85%90">기본 개념</a></li>
-<li><a href="#%EC%84%A4%EC%B9%98">설치</a>
+<li><a href="index.html#%EB%AA%A9%EC%B0%A8">목차</a></li>
+<li><a href="index.html#%EA%B8%B0%EB%B3%B8-%EA%B0%9C%EB%85%90">기본 개념</a></li>
+<li><a href="index.html#%EC%84%A4%EC%B9%98">설치</a>
 <ul>
-<li><a href="#windows">Windows</a></li>
-<li><a href="#linux-ubuntudebian">Linux (Ubuntu/Debian)</a></li>
-<li><a href="#mac">Mac</a></li>
+<li><a href="index.html#windows">Windows</a></li>
+<li><a href="index.html#linux-ubuntudebian">Linux (Ubuntu/Debian)</a></li>
+<li><a href="index.html#mac">Mac</a></li>
 </ul>
 </li>
-<li><a href="#%EC%82%AC%EC%9A%A9%EB%B2%95">사용법</a>
+<li><a href="index.html#%EC%82%AC%EC%9A%A9%EB%B2%95">사용법</a>
 <ul>
-<li><a href="#windows-1">Windows</a>
+<li><a href="index.html#windows-1">Windows</a>
 <ul>
-<li><a href="#git-bash-%EC%9D%B4%EC%9A%A9">Git Bash 이용</a></li>
-<li><a href="#windows-terminal-powershell-%EC%9D%B4%EC%9A%A9">Windows Terminal (PowerShell) 이용</a></li>
+<li><a href="index.html#git-bash-%EC%9D%B4%EC%9A%A9">Git Bash 이용</a></li>
+<li><a href="index.html#windows-terminal-powershell-%EC%9D%B4%EC%9A%A9">Windows Terminal (PowerShell) 이용</a></li>
 </ul>
 </li>
-<li><a href="#linuxmac">Linux/Mac</a></li>
+<li><a href="index.html#linuxmac">Linux/Mac</a></li>
 </ul>
 </li>
-<li><a href="#%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%83%81%EC%84%B8">명령어 상세</a>
+<li><a href="index.html#%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%83%81%EC%84%B8">명령어 상세</a>
 <ul>
-<li><a href="#0-%EC%B4%88%EA%B8%B0-%EC%84%A4%EC%A0%95">0. 초기 설정</a>
+<li><a href="index.html#0-%EC%B4%88%EA%B8%B0-%EC%84%A4%EC%A0%95">0. 초기 설정</a>
 <ul>
-<li><a href="#ssh-%ED%82%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-github%EC%97%90%EC%9D%98-%EB%93%B1%EB%A1%9D">SSH 키 생성 및 GitHub에의 등록</a></li>
-<li><a href="#%EA%B3%84%EC%A0%95-%EC%95%84%EC%9D%B4%EB%8D%B4%ED%8B%B0%ED%8B%B0-%EC%84%A4%EC%A0%95">계정 아이덴티티 설정</a></li>
+<li><a href="index.html#ssh-%ED%82%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-github%EC%97%90%EC%9D%98-%EB%93%B1%EB%A1%9D">SSH 키 생성 및 GitHub에의 등록</a></li>
+<li><a href="index.html#%EA%B3%84%EC%A0%95-%EC%95%84%EC%9D%B4%EB%8D%B4%ED%8B%B0%ED%8B%B0-%EC%84%A4%EC%A0%95">계정 아이덴티티 설정</a></li>
 </ul>
 </li>
-<li><a href="#1-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%A5%BC-%EC%83%88%EB%A1%9C-%EC%83%9D%EC%84%B1%ED%95%A0-%EB%95%8C">1. 프로젝트를 새로 생성할 때</a></li>
-<li><a href="#2-%EB%A1%9C%EC%BB%AC-%EC%9E%91%EC%97%85-%ED%99%98%EA%B2%BD%EC%9D%98-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD%EC%9D%84-%EB%A1%9C%EC%BB%AC-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EC%97%90-%EB%B0%98%EC%98%81%ED%95%A0-%EB%95%8C">2. 로컬 작업 환경의 변경사항을 로컬 레포지토리에 반영할 때</a></li>
-<li><a href="#3-%EB%A1%9C%EC%BB%AC-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EC%9D%98-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD%EC%9D%84-%EC%9B%90%EA%B2%A9-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EC%97%90-%EC%97%85%EB%A1%9C%EB%93%9C%ED%95%A0-%EB%95%8C">3. 로컬 레포지토리의 변경사항을 원격 레포지토리에 업로드할 때</a></li>
-<li><a href="#4-%EC%9B%90%EA%B2%A9-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EC%9D%98-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD%EC%9D%84-%EB%A1%9C%EC%BB%AC-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC-%EB%B0%8F-%EC%9E%91%EC%97%85-%ED%99%98%EA%B2%BD%EC%97%90-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C%ED%95%A0-%EB%95%8C">4. 원격 레포지토리의 변경사항을 로컬 레포지토리 및 작업 환경에 다운로드할 때</a></li>
-<li><a href="#5-%EB%A8%B8%EC%A7%80-%EC%BB%A8%ED%94%8C%EB%A6%AD%ED%8A%B8-%ED%95%B4%EA%B2%B0%EB%B2%95">5. 머지 컨플릭트 해결법</a></li>
-<li><a href="#6-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%A5%BC-%EB%B3%80%EA%B2%BD%ED%95%A0-%EB%95%8C">6. 브랜치를 변경할 때</a></li>
-<li><a href="#7-%ED%92%80-%EB%A6%AC%ED%80%98%EC%8A%A4%ED%8A%B8-%EB%82%A0%EB%A6%AC%EB%8A%94-%EB%B2%95">7. 풀 리퀘스트 날리는 법</a></li>
-<li><a href="#8-%EC%9E%98%EB%AA%BB%EB%90%9C-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD%EC%9D%84-%EB%90%98%EB%8F%8C%EB%A6%AC%EB%8A%94-%EB%B2%95">8. 잘못된 변경사항을 되돌리는 법</a></li>
-<li><a href="#9-%EC%95%8C%EC%95%84%EB%91%90%EB%A9%B4-%EC%9C%A0%EC%9A%A9%ED%95%9C-%EB%AA%85%EB%A0%B9%EB%93%A4">9. 알아두면 유용한 명령들</a></li>
+<li><a href="index.html#1-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%A5%BC-%EC%83%88%EB%A1%9C-%EC%83%9D%EC%84%B1%ED%95%A0-%EB%95%8C">1. 프로젝트를 새로 생성할 때</a></li>
+<li><a href="index.html#2-%EB%A1%9C%EC%BB%AC-%EC%9E%91%EC%97%85-%ED%99%98%EA%B2%BD%EC%9D%98-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD%EC%9D%84-%EB%A1%9C%EC%BB%AC-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EC%97%90-%EB%B0%98%EC%98%81%ED%95%A0-%EB%95%8C">2. 로컬 작업 환경의 변경사항을 로컬 레포지토리에 반영할 때</a></li>
+<li><a href="index.html#3-%EB%A1%9C%EC%BB%AC-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EC%9D%98-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD%EC%9D%84-%EC%9B%90%EA%B2%A9-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EC%97%90-%EC%97%85%EB%A1%9C%EB%93%9C%ED%95%A0-%EB%95%8C">3. 로컬 레포지토리의 변경사항을 원격 레포지토리에 업로드할 때</a></li>
+<li><a href="index.html#4-%EC%9B%90%EA%B2%A9-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EC%9D%98-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD%EC%9D%84-%EB%A1%9C%EC%BB%AC-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC-%EB%B0%8F-%EC%9E%91%EC%97%85-%ED%99%98%EA%B2%BD%EC%97%90-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C%ED%95%A0-%EB%95%8C">4. 원격 레포지토리의 변경사항을 로컬 레포지토리 및 작업 환경에 다운로드할 때</a></li>
+<li><a href="index.html#5-%EB%A8%B8%EC%A7%80-%EC%BB%A8%ED%94%8C%EB%A6%AD%ED%8A%B8-%ED%95%B4%EA%B2%B0%EB%B2%95">5. 머지 컨플릭트 해결법</a></li>
+<li><a href="index.html#6-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%A5%BC-%EB%B3%80%EA%B2%BD%ED%95%A0-%EB%95%8C">6. 브랜치를 변경할 때</a></li>
+<li><a href="index.html#7-%ED%92%80-%EB%A6%AC%ED%80%98%EC%8A%A4%ED%8A%B8-%EB%82%A0%EB%A6%AC%EB%8A%94-%EB%B2%95">7. 풀 리퀘스트 날리는 법</a></li>
+<li><a href="index.html#8-%EC%9E%98%EB%AA%BB%EB%90%9C-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD%EC%9D%84-%EB%90%98%EB%8F%8C%EB%A6%AC%EB%8A%94-%EB%B2%95">8. 잘못된 변경사항을 되돌리는 법</a></li>
+<li><a href="index.html#9-%EC%95%8C%EC%95%84%EB%91%90%EB%A9%B4-%EC%9C%A0%EC%9A%A9%ED%95%9C-%EB%AA%85%EB%A0%B9%EB%93%A4">9. 알아두면 유용한 명령들</a></li>
 </ul>
 </li>
-<li><a href="#%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%9A%94%EC%95%BD">명령어 요약</a></li>
+<li><a href="index.html#%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%9A%94%EC%95%BD">명령어 요약</a></li>
 </ul>
 </li>
 </ul>
@@ -297,7 +298,7 @@
 <li><img src="Screenshots/%EC%A3%BC%EC%86%8C%EB%B3%B5%EC%82%AC.PNG" alt="주소 복사" /></li>
 <li>HTTPS보다는 SSH 주소를 사용하는 것을 추천한다.</li>
 <li>다만 SSH 주소를 사용하려면 사전 작업이 필요하다.</li>
-<li>SSH 키를 생성하고 공개키를 GitHub에 등록하는 과정은 <a href="#ssh-%ED%82%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-github%EC%97%90%EC%9D%98-%EB%93%B1%EB%A1%9D">SSH 키 생성 및 GitHub에의 등록</a>을 참조한다.</li>
+<li>SSH 키를 생성하고 공개키를 GitHub에 등록하는 과정은 <a href="index.html#ssh-%ED%82%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-github%EC%97%90%EC%9D%98-%EB%93%B1%EB%A1%9D">SSH 키 생성 및 GitHub에의 등록</a>을 참조한다.</li>
 </ul>
 </li>
 <li><code>git init</code>
@@ -317,14 +318,14 @@
 <li>SSH 키 설정이 되어 있지 않다면 아래 사진과 같은 문구가 뜰 수 있다.
 <ul>
 <li><img src="./Screenshots/SSH1.PNG" alt="SSH1" /></li>
-<li>여기에서 <code>yes</code>를 입력하면 되는데, 이때 <code>Permission denied</code> 오류가 뜰 수 있다. 이 경우 <a href="#ssh-%ED%82%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-github%EC%97%90%EC%9D%98-%EB%93%B1%EB%A1%9D">SSH 키 생성 및 GitHub에의 등록</a>을 수행한 후에 다시 시도하자.</li>
+<li>여기에서 <code>yes</code>를 입력하면 되는데, 이때 <code>Permission denied</code> 오류가 뜰 수 있다. 이 경우 <a href="index.html#ssh-%ED%82%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-github%EC%97%90%EC%9D%98-%EB%93%B1%EB%A1%9D">SSH 키 생성 및 GitHub에의 등록</a>을 수행한 후에 다시 시도하자.</li>
 </ul>
 </li>
 <li>SSH 키 생성 시 비밀번호를 설정한 경우, 비밀번호를 입력해야 fetch 명령이 실행된다.</li>
 </ul>
 </li>
 <li>로컬 작업 환경에서 파일 생성 및 수정</li>
-<li><a href="#2-%EB%A1%9C%EC%BB%AC-%EC%9E%91%EC%97%85-%ED%99%98%EA%B2%BD%EC%9D%98-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD%EC%9D%84-%EB%A1%9C%EC%BB%AC-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EC%97%90-%EB%B0%98%EC%98%81%ED%95%A0-%EB%95%8C">로컬 작업 환경의 변경사항을 로컬 레포지토리에 반영할 때</a>의 명령어 입력</li>
+<li><a href="index.html#2-%EB%A1%9C%EC%BB%AC-%EC%9E%91%EC%97%85-%ED%99%98%EA%B2%BD%EC%9D%98-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD%EC%9D%84-%EB%A1%9C%EC%BB%AC-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EC%97%90-%EB%B0%98%EC%98%81%ED%95%A0-%EB%95%8C">로컬 작업 환경의 변경사항을 로컬 레포지토리에 반영할 때</a>의 명령어 입력</li>
 </ol>
 <h3 id="2-로컬-작업-환경의-변경사항을-로컬-레포지토리에-반영할-때"><a class="header" href="#2-로컬-작업-환경의-변경사항을-로컬-레포지토리에-반영할-때">2. 로컬 작업 환경의 변경사항을 로컬 레포지토리에 반영할 때</a></h3>
 <blockquote>
@@ -335,7 +336,7 @@
 <ul>
 <li>처음 프로젝트를 시작하면 기본 브랜치가 <code>main</code>으로 설정되어 있다.</li>
 <li>혼자 작업할 때에는 아무 브랜치에서 작업해도 상관 없지만, 공동으로 작업할 때에는 개인별로 하나씩의 브랜치를 파서 각자의 브랜치에서 작업한 후에 <code>main</code>으로의 풀 리퀘스트를 날리는 것이 권장된다.</li>
-<li>브랜치를 변경하거나 새로 파야 하는 경우 <a href="#6-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%A5%BC-%EB%B3%80%EA%B2%BD%ED%95%A0-%EB%95%8C">브랜치를 변경할 때</a>의 명령어를 입력한다.</li>
+<li>브랜치를 변경하거나 새로 파야 하는 경우 <a href="index.html#6-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%A5%BC-%EB%B3%80%EA%B2%BD%ED%95%A0-%EB%95%8C">브랜치를 변경할 때</a>의 명령어를 입력한다.</li>
 </ul>
 </li>
 <li>로컬 작업 환경에서 파일 변경</li>
@@ -373,12 +374,12 @@
 <li>계정 아이덴티티 설정이 되어 있지 않다면 커밋 시 아래 사진과 같은 문구가 뜨면서 커밋이 되지 않을 수 있다.
 <ul>
 <li><img src="./Screenshots/Identity1.PNG" alt="Identity1" /></li>
-<li>이 경우 <a href="#%EA%B3%84%EC%A0%95-%EC%95%84%EC%9D%B4%EB%8D%B4%ED%8B%B0%ED%8B%B0-%EC%84%A4%EC%A0%95">계정 아이덴티티 설정</a>을 수행한 후에 다시 시도하자.</li>
+<li>이 경우 <a href="index.html#%EA%B3%84%EC%A0%95-%EC%95%84%EC%9D%B4%EB%8D%B4%ED%8B%B0%ED%8B%B0-%EC%84%A4%EC%A0%95">계정 아이덴티티 설정</a>을 수행한 후에 다시 시도하자.</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#3-%EB%A1%9C%EC%BB%AC-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EC%9D%98-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD%EC%9D%84-%EC%9B%90%EA%B2%A9-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EC%97%90-%EC%97%85%EB%A1%9C%EB%93%9C%ED%95%A0-%EB%95%8C">로컬 레포지토리의 변경사항을 원격 레포지토리에 업로드할 때</a>의 명령어 입력</li>
+<li><a href="index.html#3-%EB%A1%9C%EC%BB%AC-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EC%9D%98-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD%EC%9D%84-%EC%9B%90%EA%B2%A9-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EC%97%90-%EC%97%85%EB%A1%9C%EB%93%9C%ED%95%A0-%EB%95%8C">로컬 레포지토리의 변경사항을 원격 레포지토리에 업로드할 때</a>의 명령어 입력</li>
 </ol>
 <h3 id="3-로컬-레포지토리의-변경사항을-원격-레포지토리에-업로드할-때"><a class="header" href="#3-로컬-레포지토리의-변경사항을-원격-레포지토리에-업로드할-때">3. 로컬 레포지토리의 변경사항을 원격 레포지토리에 업로드할 때</a></h3>
 <blockquote>
@@ -400,7 +401,7 @@
 <li><code>hint: See the 'Note about fast-forwards' in 'git push --help' for details.</code></li>
 </ul>
 </li>
-<li>이 경우에는 <a href="#4-%EC%9B%90%EA%B2%A9-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EC%9D%98-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD%EC%9D%84-%EB%A1%9C%EC%BB%AC-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC-%EB%B0%8F-%EC%9E%91%EC%97%85-%ED%99%98%EA%B2%BD%EC%97%90-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C%ED%95%A0-%EB%95%8C">원격 레포지토리의 변경사항을 로컬 레포지토리 및 작업 환경에 다운로드할 때</a>의 명령어를 입력한다.</li>
+<li>이 경우에는 <a href="index.html#4-%EC%9B%90%EA%B2%A9-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EC%9D%98-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD%EC%9D%84-%EB%A1%9C%EC%BB%AC-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC-%EB%B0%8F-%EC%9E%91%EC%97%85-%ED%99%98%EA%B2%BD%EC%97%90-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C%ED%95%A0-%EB%95%8C">원격 레포지토리의 변경사항을 로컬 레포지토리 및 작업 환경에 다운로드할 때</a>의 명령어를 입력한다.</li>
 </ul>
 </li>
 <li><code>-u</code> 옵션의 의미는 <a href="https://wotres.tistory.com/entry/git-push-u-%EC%98%B5%EC%85%98-%EC%82%AC%EC%9A%A9-%EC%9D%B4%EC%9C%A0">여기</a> 참조</li>
@@ -433,7 +434,7 @@
 <li><code>CONFLICT (content): Merge conflict in [파일 이름]</code></li>
 <li><code>Automatic merge failed; fix conflicts and then commit the result.</code></li>
 <li>이것은 두 명 이상의 사람이 같은 시기에 특정 파일의 특정 부분을 서로 다르게 변경하여 발생하는 충돌이다.</li>
-<li>이때는 <a href="#5-%EB%A8%B8%EC%A7%80-%EC%BB%A8%ED%94%8C%EB%A6%AD%ED%8A%B8-%ED%95%B4%EA%B2%B0%EB%B2%95">머지 컨플릭트 해결법</a>을 수행한다.</li>
+<li>이때는 <a href="index.html#5-%EB%A8%B8%EC%A7%80-%EC%BB%A8%ED%94%8C%EB%A6%AD%ED%8A%B8-%ED%95%B4%EA%B2%B0%EB%B2%95">머지 컨플릭트 해결법</a>을 수행한다.</li>
 <li>특히 Unity를 사용할 때 같은 scene을 둘 이상의 사람들이 동시에 변경해서 머지 컨플릭트가 발생하게 되면 다른 파일들보다 해결하기 어렵기 때문에 가급적 scene 파일은 한 번에 한 사람만 수정하는 것으로 한다.</li>
 </ul>
 </li>
@@ -445,7 +446,7 @@
 </li>
 </ul>
 </li>
-<li>push를 하려던 중이었다면 다시 <a href="#2-%EB%A1%9C%EC%BB%AC-%EC%9E%91%EC%97%85-%ED%99%98%EA%B2%BD%EC%9D%98-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD%EC%9D%84-%EB%A1%9C%EC%BB%AC-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EC%97%90-%EB%B0%98%EC%98%81%ED%95%A0-%EB%95%8C">로컬 작업 환경의 변경사항을 로컬 레포지토리에 반영할 때</a>부터 하나씩 실행한다.</li>
+<li>push를 하려던 중이었다면 다시 <a href="index.html#2-%EB%A1%9C%EC%BB%AC-%EC%9E%91%EC%97%85-%ED%99%98%EA%B2%BD%EC%9D%98-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD%EC%9D%84-%EB%A1%9C%EC%BB%AC-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EC%97%90-%EB%B0%98%EC%98%81%ED%95%A0-%EB%95%8C">로컬 작업 환경의 변경사항을 로컬 레포지토리에 반영할 때</a>부터 하나씩 실행한다.</li>
 </ol>
 <h3 id="5-머지-컨플릭트-해결법"><a class="header" href="#5-머지-컨플릭트-해결법">5. 머지 컨플릭트 해결법</a></h3>
 <blockquote>
@@ -473,7 +474,7 @@
 <li>내가 만든 변경사항을 살릴지, 다른 사람이 만든 변경사항을 살릴지, 둘을 적절히 병합할지는 그때그때 다르다.</li>
 </ul>
 <ol start="5">
-<li>모든 머지 컨플릭트가 해결되면 <a href="#2-%EB%A1%9C%EC%BB%AC-%EC%9E%91%EC%97%85-%ED%99%98%EA%B2%BD%EC%9D%98-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD%EC%9D%84-%EB%A1%9C%EC%BB%AC-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EC%97%90-%EB%B0%98%EC%98%81%ED%95%A0-%EB%95%8C">로컬 작업 환경의 변경사항을 로컬 레포지토리에 반영할 때</a>의 명령어를 입력한다.</li>
+<li>모든 머지 컨플릭트가 해결되면 <a href="index.html#2-%EB%A1%9C%EC%BB%AC-%EC%9E%91%EC%97%85-%ED%99%98%EA%B2%BD%EC%9D%98-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD%EC%9D%84-%EB%A1%9C%EC%BB%AC-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EC%97%90-%EB%B0%98%EC%98%81%ED%95%A0-%EB%95%8C">로컬 작업 환경의 변경사항을 로컬 레포지토리에 반영할 때</a>의 명령어를 입력한다.</li>
 <li>커밋 후 <code>git push</code> 명령어를 입력하면 커밋 메시지 에디터(Git 설치 시에 설정했던, VS Code, 메모장, Vim 등의 에디터)가 열리면서 <code>Merge branch '[머지하려는 브랜치]' into [내 현재 브랜치]</code>가 뜰 때가 있다.</li>
 </ol>
 <ul>
@@ -551,7 +552,7 @@
 <ul>
 <li>이미 만들어져 있는 다른 브랜치로 이동한다.</li>
 <li>브랜치를 변경하면 로컬 작업 환경의 파일들이 새 브랜치에 맞게 통째로 바뀐다.</li>
-<li>따라서 브랜치 변경 전에, 반드시 모든 파일을 저장하고 <a href="#2-%EB%A1%9C%EC%BB%AC-%EC%9E%91%EC%97%85-%ED%99%98%EA%B2%BD%EC%9D%98-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD%EC%9D%84-%EB%A1%9C%EC%BB%AC-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EC%97%90-%EB%B0%98%EC%98%81%ED%95%A0-%EB%95%8C">로컬 작업 환경의 변경사항을 로컬 레포지토리에 반영할 때</a>의 명령어를 모두 수행하여야 한다.</li>
+<li>따라서 브랜치 변경 전에, 반드시 모든 파일을 저장하고 <a href="index.html#2-%EB%A1%9C%EC%BB%AC-%EC%9E%91%EC%97%85-%ED%99%98%EA%B2%BD%EC%9D%98-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD%EC%9D%84-%EB%A1%9C%EC%BB%AC-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EC%97%90-%EB%B0%98%EC%98%81%ED%95%A0-%EB%95%8C">로컬 작업 환경의 변경사항을 로컬 레포지토리에 반영할 때</a>의 명령어를 모두 수행하여야 한다.</li>
 <li>이 명령을 수행하면 브랜치가 변경되지만, 해당 브랜치가 존재하지 않고 새로 만들어야 하는 경우에는 3. 이하를 수행한다.</li>
 <li><em>Git 2.25부터 <code>git checkout</code> 명령어가 <code>git switch</code> 및 <code>git restore</code>의 두 명령어로 분리되었다. 그러나 아직은 <code>git checkout</code>을 사용해도 된다.</em></li>
 </ul>
@@ -589,7 +590,7 @@
 <ol>
 <li>내 브랜치에서 만든 모든 변경사항을 원격 레포지토리에 업로드
 <ul>
-<li><a href="#3-%EB%A1%9C%EC%BB%AC-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EC%9D%98-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD%EC%9D%84-%EC%9B%90%EA%B2%A9-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EC%97%90-%EC%97%85%EB%A1%9C%EB%93%9C%ED%95%A0-%EB%95%8C">로컬 레포지토리의 변경사항을 원격 레포지토리에 업로드할 때</a>까지의 과정을 수행한 상태이면 된다.</li>
+<li><a href="index.html#3-%EB%A1%9C%EC%BB%AC-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EC%9D%98-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD%EC%9D%84-%EC%9B%90%EA%B2%A9-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EC%97%90-%EC%97%85%EB%A1%9C%EB%93%9C%ED%95%A0-%EB%95%8C">로컬 레포지토리의 변경사항을 원격 레포지토리에 업로드할 때</a>까지의 과정을 수행한 상태이면 된다.</li>
 </ul>
 </li>
 <li>GitHub에 접속하여 작업 중인 레포지토리로 이동</li>
@@ -608,7 +609,7 @@
 <ul>
 <li>머지 컨플릭트가 있어서 머지할 수 없다는 메시지가 뜨면, 두 가지 방법으로 해결할 수 있다.
 <ol>
-<li>내 로컬 작업 환경의 내 브랜치에서 <code>git pull origin main</code>을 한 다음, <a href="#5-%EB%A8%B8%EC%A7%80-%EC%BB%A8%ED%94%8C%EB%A6%AD%ED%8A%B8-%ED%95%B4%EA%B2%B0%EB%B2%95">머지 컨플릭트 해결법</a>을 수행하고, 다시 <code>git push</code>하여 풀 리퀘스트를 날리는 방법</li>
+<li>내 로컬 작업 환경의 내 브랜치에서 <code>git pull origin main</code>을 한 다음, <a href="index.html#5-%EB%A8%B8%EC%A7%80-%EC%BB%A8%ED%94%8C%EB%A6%AD%ED%8A%B8-%ED%95%B4%EA%B2%B0%EB%B2%95">머지 컨플릭트 해결법</a>을 수행하고, 다시 <code>git push</code>하여 풀 리퀘스트를 날리는 방법</li>
 <li>GitHub의 &quot;Resolve conflicts&quot; 기능을 활용하는 방법: <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github">여기</a> 참조</li>
 </ol>
 </li>
@@ -788,23 +789,234 @@
 <li><code>git push -u origin [현재 브랜치 이름]</code></li>
 <li>GitHub에 들어가서, 내 브랜치(compare)에서 <code>main</code> 브랜치(base)로의 풀 리퀘스트(PR) 생성</li>
 </ul>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="git-설치"><a class="header" href="#git-설치">Git 설치</a></h2>
+<ul>
+<li><a href="./README.html#%EC%84%A4%EC%B9%98">이전으로 돌아가기</a></li>
+</ul>
+<h3 id="windows-2"><a class="header" href="#windows-2">Windows</a></h3>
+<ol>
+<li><a href="http://git-scm.com/download/win">여기</a>에서 &quot;Click here to download&quot; 링크 클릭</li>
+<li>다운로드한 파일 실행</li>
+</ol>
+<ul>
+<li>아래는 버전 2.35.1.2-64-bit 및 2.36.1-64-bit 기준으로 작성하였다. 최신 버전이 있다면 최신 버전을 받으면 된다.</li>
+</ul>
+<ol start="3">
+<li><img src="Screenshots/%EC%84%A4%EC%B9%981.PNG" alt="설치1" /></li>
+</ol>
+<ul>
+<li>&quot;Only show new options&quot;를 체크하지 <strong>않고</strong> &quot;Next&quot; 클릭</li>
+</ul>
+<ol start="4">
+<li>설치 경로 지정</li>
+<li><img src="Screenshots/%EC%84%A4%EC%B9%982-1.PNG" alt="설치2" /></li>
+</ol>
+<ul>
+<li>위 사진처럼 체크하고 &quot;Next&quot; 클릭
+<ul>
+<li>Windows Explorer integration 체크
+<ul>
+<li>Git Bash Here 체크</li>
+<li>Git GUI Here 체크</li>
+</ul>
+</li>
+<li>Git LFS (Large File Support) 체크</li>
+<li>Associate .git* configuration files with the default text editor 체크</li>
+<li>Associate .sh files to be run with Bash 체크</li>
+<li>(NEW!) Add a Git Bash Profile to Windows Terminal <strong>체크</strong></li>
+</ul>
+</li>
+<li>다른 옵션도 읽어보고 필요하면 체크해도 괜찮다.</li>
+</ul>
+<ol start="6">
+<li>시작 메뉴에 폴더 만들 것인지 묻는 창이 뜬다면, &quot;Next&quot; 클릭</li>
+<li><img src="Screenshots/%EC%84%A4%EC%B9%983.PNG" alt="설치3" /></li>
+</ol>
+<ul>
+<li><strong>Visual Studio Code</strong>가 설치되어 있는 경우 위 사진처럼 Code를 사용할 수 있고, 아니면 메모장(Notepad)이나 본인이 편한 에디터(Vim 등)로 설정하면 된다.</li>
+<li>나중에 커밋 메시지를 작성하거나 머지 커밋이 발생할 때 여기서 설정했던 에디터가 열린다.</li>
+</ul>
+<ol start="8">
+<li><img src="Screenshots/%EC%84%A4%EC%B9%984.PNG" alt="설치4" /></li>
+</ol>
+<ul>
+<li>위 사진처럼 <strong>두 번째 항목에 체크</strong>하고 초기 브랜치 이름이 <code>main</code>으로 적혀 있는지 확인하고 &quot;Next&quot; 클릭</li>
+<li>현재 GitHub의 주 브랜치 이름의 기본값은 <code>main</code>이다.
+<ul>
+<li>예전에는 새 레포지토리의 주 브랜치 이름이 <code>master</code>였다.</li>
+</ul>
+</li>
+<li>이미 Git을 사용하고 있었다면, 이 옵션을 변경하여 새로 설치해도 기존 레포지토리에는 영향을 주지 않는다.</li>
+</ul>
+<ol start="9">
+<li><img src="Screenshots/%EC%84%A4%EC%B9%985.PNG" alt="설치5" /></li>
+</ol>
+<ul>
+<li>중간에 &quot;(Recommended)&quot;된 두 번째 항목에 체크하고 &quot;Next&quot; 클릭</li>
+</ul>
+<ol start="10">
+<li><img src="Screenshots/%EC%84%A4%EC%B9%986.PNG" alt="설치6" /></li>
+</ol>
+<ul>
+<li>위 사진처럼 첫 번째 항목에 체크하고 &quot;Next&quot; 클릭</li>
+</ul>
+<ol start="11">
+<li><img src="Screenshots/%EC%84%A4%EC%B9%987.PNG" alt="설치7" /></li>
+</ol>
+<ul>
+<li>위 사진처럼 첫 번째 항목에 체크하고 &quot;Next&quot; 클릭</li>
+</ul>
+<ol start="12">
+<li><img src="Screenshots/%EC%84%A4%EC%B9%988.PNG" alt="설치8" /></li>
+</ol>
+<ul>
+<li>Windows 사용자라면 위 사진처럼 첫 번째 항목에 체크하고 &quot;Next&quot; 클릭</li>
+</ul>
+<ol start="13">
+<li><img src="Screenshots/%EC%84%A4%EC%B9%989.PNG" alt="설치9" /></li>
+</ol>
+<ul>
+<li>위 사진처럼 첫 번째 항목에 체크하고 &quot;Next&quot; 클릭</li>
+<li>그러나 명령 프롬프트(cmd)를 너무나 사랑한다면 두 번째 항목에 체크하고 &quot;Next&quot; 클릭해도 된다. (비추천)</li>
+</ul>
+<ol start="14">
+<li><img src="Screenshots/%EC%84%A4%EC%B9%9810-1.PNG" alt="설치10" /></li>
+</ol>
+<ul>
+<li>위 사진처럼 <strong>두 번째 항목에 체크</strong>하고 &quot;Next&quot; 클릭
+<ul>
+<li><code>git pull</code> 명령 사용 시 자동으로 <code>git pull --rebase</code> 명령을 사용한 것과 동일하게 처리한다.</li>
+<li>머지 커밋이 불필요하게 쌓이는 것을 방지하기 때문에 추천한다.</li>
+</ul>
+</li>
+<li>머지 커밋을 남겨도 상관없는 경우 첫 번째 항목에 체크하고 &quot;Next&quot; 클릭
+<ul>
+<li>사람에 따라 머지 커밋이 기록으로 남는 게 지저분하다고 생각할 수 있다. 그러나 사실 그렇게 중요한 문제는 아니다.</li>
+</ul>
+</li>
+</ul>
+<ol start="15">
+<li><img src="Screenshots/%EC%84%A4%EC%B9%9811.PNG" alt="설치11" /></li>
+</ol>
+<ul>
+<li>위 사진처럼 첫 번째 항목에 체크하고 &quot;Next&quot; 클릭</li>
+</ul>
+<ol start="16">
+<li><img src="Screenshots/%EC%84%A4%EC%B9%9812.PNG" alt="설치12" /></li>
+</ol>
+<ul>
+<li>위 사진처럼 첫 번째 항목에만 체크하고 &quot;Next&quot; 클릭</li>
+</ul>
+<ol start="17">
+<li><img src="Screenshots/%EC%84%A4%EC%B9%9813.PNG" alt="설치13" /></li>
+</ol>
+<ul>
+<li>위 사진처럼 아무 항목도 체크하지 <strong>않고</strong> &quot;Install&quot; 클릭</li>
+<li>각 항목을 읽어보고 써보고 싶다는 생각이 들면 체크해도 괜찮다.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="git-명령어-상세"><a class="header" href="#git-명령어-상세">Git 명령어 상세</a></h2>
+<h3 id="0-초기-설정-1"><a class="header" href="#0-초기-설정-1">0. 초기 설정</a></h3>
+<ul>
+<li><a href="./README.html#0-%EC%B4%88%EA%B8%B0-%EC%84%A4%EC%A0%95">이전으로 돌아가기</a></li>
+</ul>
+<h4 id="ssh-키-생성-및-github에의-등록-1"><a class="header" href="#ssh-키-생성-및-github에의-등록-1">SSH 키 생성 및 GitHub에의 등록</a></h4>
+<blockquote>
+<p>출처: https://www.lainyzine.com/ko/article/creating-ssh-key-for-github/</p>
+</blockquote>
+<ol>
+<li>Git Bash (Windows) 또는 터미널(Linux/Mac) 실행</li>
+<li><code>cd ~/.ssh</code></li>
+<li><code>ls</code>
+<ul>
+<li><code>id_ed25519</code>와 <code>id_ed25519.pub</code>가 보이지 않으면 아래의 과정을 거쳐야 한다.</li>
+<li>예전 Git 유저의 경우 <code>id_rsa</code>와 <code>id_rsa.pub</code>가 보일 수도 있는데, 이 경우에는 4. ~ 7. 과정을 생략해도 좋다.</li>
+</ul>
+</li>
+<li><code>ssh-keygen -t ed25519 -C &quot;[your_email@example.com]&quot;</code>
+<ul>
+<li><code>[your_email@example.com]</code> 부분은 자신의 이메일로 대체해서 적는다.</li>
+<li>ed25519 방식이 동작하지 않는 경우 대신 아래 명령을 입력한다.
+<ul>
+<li><code>ssh-keygen -t rsa -b 4096 -C &quot;[your_email@example.com]&quot;</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>어느 위치에 저장할 것인지 물어본다.
+<ul>
+<li>그냥 enter 키를 입력하면 기본값으로 설정되며 넘어간다.</li>
+</ul>
+</li>
+<li>비밀번호(passphrase)를 입력하라고 물어본다.
+<ul>
+<li>그냥 enter 키를 입력하면 비밀번호 없이 사용 가능하지만, 가급적이면 <strong>비밀번호를 설정하는 것을 추천</strong>한다.</li>
+</ul>
+</li>
+<li>한 번 더 비밀번호를 입력하라고 물어본다.
+<ul>
+<li>같은 비밀번호를 입력하면 된다.</li>
+<li>앞에서 enter로 넘어갔다면 또 enter를 누르면 된다.</li>
+</ul>
+</li>
+<li>이제 아래 사진처럼 출력되면서 <code>~/.ssh/</code> 폴더 안에 SSH 키가 생성되었다.
+<ul>
+<li><img src="./Screenshots/SSH2.PNG" alt="SSH2" /></li>
+<li>Windows의 경우 기본값 위치는 <code>C:\Users\[계정 이름]\.ssh\</code> 에 있을 것이다.</li>
+<li>ed25519 방식으로 생성한 경우 두 개의 파일 <code>id_ed25519</code>와 <code>id_ed25519.pub</code>가 생성된다.</li>
+<li>RSA 방식으로 생성한 경우 두 개의 파일 <code>id_rsa</code>와 <code>id_rsa.pub</code>가 생성된다.</li>
+<li><strong>주의: <code>id_ed25519</code> 또는 <code>id_rsa</code>의 내용은 절대 다른 사람에게 공개되어서는 안 된다!</strong>
+<ul>
+<li>이것은 private key라고 부른다.</li>
+</ul>
+</li>
+<li><code>id_ed25519.pub</code> 또는 <code>id_rsa.pub</code>의 내용은 다른 사람들에게 공개되어도 상관 없다.
+<ul>
+<li>이것은 public key라고 부른다.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>id_ed25519.pub</code>의 내용물을 복사한다.
+<ul>
+<li>Windows에서는 <code>clip &lt; ~/.ssh/id_ed25519.pub</code> 실행</li>
+<li>Mac에서는 <code>pbcopy &lt; ~/.ssh/id_ed25519.pub</code> 실행</li>
+</ul>
+</li>
+<li><a href="https://github.com">GitHub</a>에 접속하여 Sign in 한다.</li>
+<li>아래 사진처럼 상단 오른쪽에 있는 자신의 초상화를 클릭하고 &quot;Settings&quot;를 클릭한다.
+<ul>
+<li><img src="./Screenshots/SSH3.PNG" alt="SSH3" /></li>
+</ul>
+</li>
+<li>아래 사진처럼 &quot;SSH and GPG keys&quot; 메뉴로 들어간다.
+<ul>
+<li><img src="./Screenshots/SSH4.PNG" alt="SSH4" /></li>
+</ul>
+</li>
+<li>오른쪽 위에 있는 초록색 &quot;New SSH key&quot; 버튼을 클릭한다.</li>
+<li>아래 사진처럼 &quot;Title&quot;에는 자신이 알아볼 수 있도록 제목을 넣고, &quot;Key&quot;에는 위에서 복사한 <code>id_ed25519.pub</code>의 내용물을 붙여넣는다.
+<ul>
+<li><img src="./Screenshots/SSH5.PNG" alt="SSH5" /></li>
+<li>필자는 개인적으로 &quot;Title&quot;에 컴퓨터 종류를 적는다.</li>
+</ul>
+</li>
+<li>아래 초록색 &quot;Add SSH key&quot; 버튼을 클릭한다.
+<ul>
+<li>이제 이 컴퓨터에서 SSH를 통한 GitHub 접근이 가능하다!</li>
+</ul>
+</li>
+</ol>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="next" href="Install-Windows.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="next" href="Install-Windows.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
             </nav>
 
         </div>
@@ -820,5 +1032,10 @@
         <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
     </body>
 </html>
