@@ -1,5 +1,5 @@
 ## Git 설치
-* [이전으로 돌아가기](./README.md#설치)
+* [이전으로 돌아가기](./index.html#설치)
 ### Windows
 1. [여기](http://git-scm.com/download/win)에서 "Click here to download" 링크 클릭
 2. 다운로드한 파일 실행

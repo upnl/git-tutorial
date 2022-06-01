@@ -1,6 +1,6 @@
 ## Git 명령어 상세
 ### 0. 초기 설정
-* [이전으로 돌아가기](./README.md#0-초기-설정)
+* [이전으로 돌아가기](./index.html#0-초기-설정)
 #### SSH 키 생성 및 GitHub에의 등록
 > 출처: https://www.lainyzine.com/ko/article/creating-ssh-key-for-github/
 1. Git Bash (Windows) 또는 터미널(Linux/Mac) 실행
