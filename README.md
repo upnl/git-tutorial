@@ -9,6 +9,9 @@
     - [Windows](#windows-1)
     - [Linux/Mac](#linuxmac)
   - [명령어 상세](#명령어-상세)
+    - [0. 초기 설정](#0-초기-설정)
+      - [SSH 키 생성 및 GitHub에의 등록](#ssh-키-생성-및-github에의-등록)
+      - [계정 아이덴티티 설정](#계정-아이덴티티-설정)
     - [1. 프로젝트를 새로 생성할 때](#1-프로젝트를-새로-생성할-때)
     - [2. 로컬 작업 환경의 변경사항을 로컬 레포지토리에 반영할 때](#2-로컬-작업-환경의-변경사항을-로컬-레포지토리에-반영할-때)
     - [3. 로컬 레포지토리의 변경사항을 원격 레포지토리에 업로드할 때](#3-로컬-레포지토리의-변경사항을-원격-레포지토리에-업로드할-때)
@@ -33,48 +36,53 @@
 * https://git-scm.com/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%84%A4%EC%B9%98
 
 ### Windows
-* [여기](http://git-scm.com/download/win)에서 "Click here to download" 링크 클릭
-* 다운로드한 파일 실행
-  * 아래는 버전 2.35.1.2-64-bit 기준으로 작성하였다.
-* ![설치1](Screenshots/%EC%84%A4%EC%B9%981.PNG)
+1. [여기](http://git-scm.com/download/win)에서 "Click here to download" 링크 클릭
+2. 다운로드한 파일 실행
+  * 아래는 버전 2.35.1.2-64-bit 및 2.36.1-64-bit 기준으로 작성하였다. 최신 버전이 있다면 최신 버전을 받으면 된다.
+3. ![설치1](Screenshots/%EC%84%A4%EC%B9%981.PNG)
   * "Only show new options"를 체크하지 **않고** "Next" 클릭
-* ![설치2](Screenshots/%EC%84%A4%EC%B9%982.PNG)
+4. 설치 경로 지정
+5. ![설치2](Screenshots/%EC%84%A4%EC%B9%982-1.PNG)
   * 위 사진처럼 체크하고 "Next" 클릭
     * Windows Explorer integration 체크
       * Git Bash Here 체크
-      * Git GUI Here 체크 **해제** (체크해도 괜찮음)
+      * Git GUI Here 체크
     * Git LFS (Large File Support) 체크
     * Associate .git* configuration files with the default text editor 체크
     * Associate .sh files to be run with Bash 체크
+    * (NEW!) Add a Git Bash Profile to Windows Terminal **체크**
   * 다른 옵션도 읽어보고 필요하면 체크해도 괜찮다.
-* ![설치3](Screenshots/%EC%84%A4%EC%B9%983.PNG)
-  * Visual Studio Code가 설치되어 있는 경우 위 사진처럼 Code를 사용할 수 있고, 아니면 메모장(Notepad)이나 본인이 편한 에디터로 설정하면 된다.
-  * 나중에 커밋 메시지를 작성하거나 두 브랜치를 머지하려고 할 때 여기서 설정했던 에디터가 열린다.
-* ![설치4](Screenshots/%EC%84%A4%EC%B9%984.PNG)
-  * 위 사진처럼 두 번째 항목에 체크하고 초기 브랜치 이름이 `main`으로 적혀 있는지 확인하고 "Next" 클릭
-  * 예전에는 새 레포지토리의 주 브랜치 이름이 `master`였지만, 최근에는 `main`으로 갈아타고 있는 추세이다.
+6. 시작 메뉴에 폴더 만들 것인지 묻는 창이 뜬다면, "Next" 클릭
+7. ![설치3](Screenshots/%EC%84%A4%EC%B9%983.PNG)
+  * **Visual Studio Code**가 설치되어 있는 경우 위 사진처럼 Code를 사용할 수 있고, 아니면 메모장(Notepad)이나 본인이 편한 에디터(Vim 등)로 설정하면 된다.
+  * 나중에 커밋 메시지를 작성하거나 머지 커밋이 발생할 때 여기서 설정했던 에디터가 열린다.
+8. ![설치4](Screenshots/%EC%84%A4%EC%B9%984.PNG)
+  * 위 사진처럼 **두 번째 항목에 체크**하고 초기 브랜치 이름이 `main`으로 적혀 있는지 확인하고 "Next" 클릭
+  * 현재 GitHub의 주 브랜치 이름의 기본값은 `main`이다.
+    * 예전에는 새 레포지토리의 주 브랜치 이름이 `master`였다.
   * 이미 Git을 사용하고 있었다면, 이 옵션을 변경하여 새로 설치해도 기존 레포지토리에는 영향을 주지 않는다.
-* ![설치5](Screenshots/%EC%84%A4%EC%B9%985.PNG)
+9. ![설치5](Screenshots/%EC%84%A4%EC%B9%985.PNG)
   * 중간에 "(Recommended)"된 두 번째 항목에 체크하고 "Next" 클릭
-* ![설치6](Screenshots/%EC%84%A4%EC%B9%986.PNG)
+10. ![설치6](Screenshots/%EC%84%A4%EC%B9%986.PNG)
   * 위 사진처럼 첫 번째 항목에 체크하고 "Next" 클릭
-* ![설치7](Screenshots/%EC%84%A4%EC%B9%987.PNG)
+11. ![설치7](Screenshots/%EC%84%A4%EC%B9%987.PNG)
   * 위 사진처럼 첫 번째 항목에 체크하고 "Next" 클릭
-* ![설치8](Screenshots/%EC%84%A4%EC%B9%988.PNG)
+12. ![설치8](Screenshots/%EC%84%A4%EC%B9%988.PNG)
   * Windows 사용자라면 위 사진처럼 첫 번째 항목에 체크하고 "Next" 클릭
-  * Linux(Unix) 사용자라면 두 번째 항목에 체크하고 "Next" 클릭
-* ![설치9](Screenshots/%EC%84%A4%EC%B9%989.PNG)
+13. ![설치9](Screenshots/%EC%84%A4%EC%B9%989.PNG)
   * 위 사진처럼 첫 번째 항목에 체크하고 "Next" 클릭
-  * 그러나 명령 프롬프트(cmd)를 너무나 사랑한다면 두 번째 항목에 체크하고 "Next" 클릭해도 된다.
-* ![설치10](Screenshots/%EC%84%A4%EC%B9%9810.PNG)
-  * 머지 커밋을 남겨도 상관없는 경우 위 사진처럼 첫 번째 항목에 체크하고 "Next" 클릭
-    * 사람에 따라 머지 커밋이 기록으로 남는 게 지저분하다고 생각할 수 있지만, 크게 문제가 되지는 않는다.
-  * 머지 커밋을 남기고 싶지 않고 rebase 명령을 잘 이해하고 있다면 두 번째 항목에 체크하고 "Next" 클릭해도 된다.
-* ![설치11](Screenshots/%EC%84%A4%EC%B9%9811.PNG)
+  * 그러나 명령 프롬프트(cmd)를 너무나 사랑한다면 두 번째 항목에 체크하고 "Next" 클릭해도 된다. (비추천)
+14. ![설치10](Screenshots/%EC%84%A4%EC%B9%9810-1.PNG)
+  * 위 사진처럼 **두 번째 항목에 체크**하고 "Next" 클릭
+    * `git pull` 명령 사용 시 자동으로 `git pull --rebase` 명령을 사용한 것과 동일하게 처리한다.
+    * 머지 커밋이 불필요하게 쌓이는 것을 방지하기 때문에 추천한다.
+  * 머지 커밋을 남겨도 상관없는 경우 첫 번째 항목에 체크하고 "Next" 클릭
+    * 사람에 따라 머지 커밋이 기록으로 남는 게 지저분하다고 생각할 수 있다. 그러나 사실 그렇게 중요한 문제는 아니다.
+15. ![설치11](Screenshots/%EC%84%A4%EC%B9%9811.PNG)
   * 위 사진처럼 첫 번째 항목에 체크하고 "Next" 클릭
-* ![설치12](Screenshots/%EC%84%A4%EC%B9%9812.PNG)
+16. ![설치12](Screenshots/%EC%84%A4%EC%B9%9812.PNG)
   * 위 사진처럼 첫 번째 항목에만 체크하고 "Next" 클릭
-* ![설치13](Screenshots/%EC%84%A4%EC%B9%9813.PNG)
+17. ![설치13](Screenshots/%EC%84%A4%EC%B9%9813.PNG)
   * 위 사진처럼 아무 항목도 체크하지 **않고** "Install" 클릭
   * 각 항목을 읽어보고 써보고 싶다는 생각이 들면 체크해도 괜찮다.
 
@@ -90,14 +98,68 @@
 * 후술할 Git 명령어를 상황에 맞게 입력
 
 ## 명령어 상세
+### 0. 초기 설정
+#### SSH 키 생성 및 GitHub에의 등록
+> 출처: https://www.lainyzine.com/ko/article/creating-ssh-key-for-github/
+1. Git Bash (Windows) 또는 터미널(Linux/Mac) 실행
+2. `cd ~/.ssh`
+3. `ls`
+   * `id_ed25519`와 `id_ed25519.pub`가 보이지 않으면 아래의 과정을 거쳐야 한다.
+   * 예전 Git 유저의 경우 `id_rsa`와 `id_rsa.pub`가 보일 수도 있는데, 이 경우에는 4. ~ 7. 과정을 생략해도 좋다.
+4. `ssh-keygen -t ed25519 -C "your_email@example.com"`
+   * `your_email@example.com` 부분은 자신의 이메일로 대체해서 적는다.
+   * ed25519 방식이 동작하지 않는 경우 대신 아래 명령을 입력한다.
+     * `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+5. 어느 위치에 저장할 것인지 물어본다.
+   * 그냥 enter 키를 입력하면 기본값으로 설정되며 넘어간다.
+6. 비밀번호(passphrase)를 입력하라고 물어본다.
+   * 그냥 enter 키를 입력하면 비밀번호 없이 사용 가능하지만, 가급적이면 **비밀번호를 설정하는 것을 추천**한다.
+7. 한 번 더 비밀번호를 입력하라고 물어본다.
+   * 같은 비밀번호를 입력하면 된다.
+   * 앞에서 enter로 넘어갔다면 또 enter를 누르면 된다.
+8. 이제 아래 사진처럼 출력되면서 `~/.ssh/` 폴더 안에 SSH 키가 생성되었다.
+   * ![SSH2](./Screenshots/SSH2.PNG)
+   * Windows의 경우 기본값 위치는 `C:\사용자\계정 이름\.ssh\` 에 있을 것이다.
+   * ed25519 방식으로 생성한 경우 두 개의 파일 `id_ed25519`와 `id_ed25519.pub`가 생성된다.
+   * RSA 방식으로 생성한 경우 두 개의 파일 `id_rsa`와 `id_rsa.pub`가 생성된다.
+   * **주의: `id_ed25519` 또는 `id_rsa`의 내용은 절대 다른 사람에게 공개되어서는 안 된다!**
+     * 이것은 private key라고 부른다.
+   * `id_ed25519.pub` 또는 `id_rsa.pub`의 내용은 다른 사람들에게 공개되어도 상관 없다.
+     * 이것은 public key라고 부른다.
+9.  `id_ed25519.pub`의 내용물을 복사한다.
+    * Windows에서는 `clip < ~/.ssh/id_ed25519.pub` 실행
+    * Mac에서는 `pbcopy < ~/.ssh/id_ed25519.pub` 실행
+10. [GitHub](https://github.com)에 접속하여 Sign in 한다.
+11. 아래 사진처럼 상단 오른쪽에 있는 자신의 초상화를 클릭하고 "Settings"를 클릭한다.
+    * ![SSH3](./Screenshots/SSH3.PNG)
+12. 아래 사진처럼 "SSH and GPG keys" 메뉴로 들어간다.
+    * ![SSH4](./Screenshots/SSH4.PNG)
+13. 오른쪽 위에 있는 초록색 "New SSH key" 버튼을 클릭한다.
+14. 아래 사진처럼 "Title"에는 자신이 알아볼 수 있도록 제목을 넣고, "Key"에는 위에서 복사한 `id_ed25519.pub`의 내용물을 붙여넣는다.
+    * ![SSH5](./Screenshots/SSH5.PNG)
+    * 필자는 개인적으로 "Title"에 컴퓨터 종류를 적는다.
+15. 아래 초록색 "Add SSH key" 버튼을 클릭한다.
+    * 이제 이 컴퓨터에서 SSH를 통한 GitHub 접근이 가능하다!
+
+#### 계정 아이덴티티 설정
+1. Git Bash (Windows) 또는 터미널(Linux/Mac) 실행
+2. `git config --global user.email "you@example.com"`
+   * `you@example.com` 부분은 자신의 이메일로 대체해서 적는다.
+   * `--global` 옵션은 이 컴퓨터의 모든 레포지토리(앞으로 생성될 레포지토리 포함)에 같은 아이덴티티를 적용하겠다는 의미이다.
+     * 이 레포지토리에만 이 아이덴티티를 적용하고 싶다면 `--global` 옵션을 생략하고 실행한다.
+3. `git config --global user.name "Your Name"`
+   * `Your Name` 부분은 자신의 이름을 영어로 대체해서 적는다.
+   * `--global` 옵션은 이 컴퓨터의 모든 레포지토리(앞으로 생성될 레포지토리 포함)에 같은 아이덴티티를 적용하겠다는 의미이다.
+     * 이 레포지토리에만 이 아이덴티티를 적용하고 싶다면 `--global` 옵션을 생략하고 실행한다.
+
 ### 1. 프로젝트를 새로 생성할 때
 1. GitHub에서 새로운 원격 레포지토리 생성
    * GitHub 홈페이지에 Sign in 후 New 버튼을 누르고 레포지토리 이름을 정해서 생성하면 된다.
 2. 아래 사진처럼 초록색 "Code" 버튼을 누르고 표시되는 주소 복사
    * ![주소 복사](Screenshots/%EC%A3%BC%EC%86%8C%EB%B3%B5%EC%82%AC.PNG)
-   * HTTPS보다는 SSH가 보안이 좋아 더 선호된다.
-   * 다만 SSH를 사용하려면 다소 복잡한 사전 작업이 필요하다.
-   * SSH 키를 생성하고 공개키를 GitHub에 등록하는 과정은 [여기](https://www.lainyzine.com/ko/article/creating-ssh-key-for-github/)를 참조
+   * HTTPS보다는 SSH 주소를 사용하는 것을 추천한다.
+   * 다만 SSH 주소를 사용하려면 사전 작업이 필요하다.
+   * SSH 키를 생성하고 공개키를 GitHub에 등록하는 과정은 [SSH 키 생성 및 GitHub에의 등록](#ssh-키-생성-및-github에의-등록)을 참조한다.
 3. `git init`
    * 해당 폴더를 로컬 작업 환경으로 하고 로컬 레포지토리를 생성하는 명령이다.
 4. `git remote add origin [원격 레포지토리의 SSH 또는 HTTPS 주소 붙여넣기]`
@@ -105,6 +167,10 @@
    * Windows 기준으로 Git Bash에 주소를 붙여넣을 때에는 오른쪽 클릭 후 Paste 선택
    * 예: `git remote add origin git@github.com:upnl/simple-dodge-reference.git`
 5. `git fetch origin`
+   * SSH 키 설정이 되어 있지 않다면 아래 사진과 같은 문구가 뜰 수 있다.
+     * ![SSH1](./Screenshots/SSH1.PNG)
+     * 여기에서 `yes`를 입력하면 되는데, 이때 `Permission denied` 오류가 뜰 수 있다. 이 경우 [SSH 키 생성 및 GitHub에의 등록](#ssh-키-생성-및-github에의-등록)을 수행한 후에 다시 시도하자.
+   * SSH 키 생성 시 비밀번호를 설정한 경우, 비밀번호를 입력해야 fetch 명령이 실행된다.
 6. 로컬 작업 환경에서 파일 생성 및 수정
 7. [로컬 작업 환경의 변경사항을 로컬 레포지토리에 반영할 때](#2-로컬-작업-환경의-변경사항을-로컬-레포지토리에-반영할-때)의 명령어 입력
 
@@ -128,6 +194,11 @@
      * 나쁜 예: `git commit -m "minor"`
    * 커밋 메시지를 한글로 작성하는 것도 가능하다.
    * 한번 커밋하면 되돌리기 어렵다. 신중히 입력하자.
+     * 지난 커밋을 조작하는 방법이 있기는 하지만, 여기서 다루지는 않겠다.
+     * 잘못된 커밋을 `git push`하면 정말 큰일난다. 이때는 조작하기도 어렵다.
+   * 계정 아이덴티티 설정이 되어 있지 않다면 커밋 시 아래 사진과 같은 문구가 뜨면서 커밋이 되지 않을 수 있다.
+     * ![Identity1](./Screenshots/Identity1.PNG)
+     * 이 경우 [계정 아이덴티티 설정](#계정-아이덴티티-설정)을 수행한 후에 다시 시도하자.
 6. [로컬 레포지토리의 변경사항을 원격 레포지토리에 업로드할 때](#3-로컬-레포지토리의-변경사항을-원격-레포지토리에-업로드할-때)의 명령어 입력
 
 ### 3. 로컬 레포지토리의 변경사항을 원격 레포지토리에 업로드할 때
@@ -144,6 +215,8 @@
        * `hint: See the 'Note about fast-forwards' in 'git push --help' for details.`
      * 이 경우에는 [원격 레포지토리의 변경사항을 로컬 레포지토리 및 작업 환경에 다운로드할 때](#4-원격-레포지토리의-변경사항을-로컬-레포지토리-및-작업-환경에-다운로드할-때)의 명령어를 입력한다.
    * `-u` 옵션의 의미는 [여기](https://wotres.tistory.com/entry/git-push-u-%EC%98%B5%EC%85%98-%EC%82%AC%EC%9A%A9-%EC%9D%B4%EC%9C%A0) 참조
+   * 잘못된 커밋이 있는 경우 절대 `git push`하지 말고 로컬에서 커밋을 조작하는 것을 추천한다.
+     * 지난 커밋을 조작하는 방법은 여기서 다루지 않는다. 검색해서 찾아보기를 바란다.
 
 ### 4. 원격 레포지토리의 변경사항을 로컬 레포지토리 및 작업 환경에 다운로드할 때
 1. `git fetch origin`
