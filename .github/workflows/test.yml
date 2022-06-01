@@ -13,7 +13,7 @@ jobs:
         run: |
           mkdir bin
           curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.4.18/mdbook-v0.4.18-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=bin
-          bin/mdBook build
+          bin/mdbook build
       - name: Upload build artifacts
         uses: actions/upload-artifact@v3
         with:
