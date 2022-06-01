@@ -5,8 +5,12 @@
   - [기본 개념](#기본-개념)
   - [설치](#설치)
     - [Windows](#windows)
+    - [Linux (Ubuntu/Debian)](#linux-ubuntudebian)
+    - [Mac](#mac)
   - [사용법](#사용법)
     - [Windows](#windows-1)
+      - [Git Bash 이용](#git-bash-이용)
+      - [Windows Terminal (PowerShell) 이용](#windows-terminal-powershell-이용)
     - [Linux/Mac](#linuxmac)
   - [명령어 상세](#명령어-상세)
     - [0. 초기 설정](#0-초기-설정)
@@ -22,7 +26,6 @@
     - [8. 잘못된 변경사항을 되돌리는 법](#8-잘못된-변경사항을-되돌리는-법)
     - [9. 알아두면 유용한 명령들](#9-알아두면-유용한-명령들)
   - [명령어 요약](#명령어-요약)
-  - [작성자](#작성자)
 
 ---
 
@@ -33,64 +36,38 @@
 * 원격 레포지토리: GitHub 등 원격 서버에 저장되어 관리되는 파일들을 말한다. 다른 사용자들과 공유된다.
 
 ## 설치
-* https://git-scm.com/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%84%A4%EC%B9%98
+> https://git-scm.com/book/ko/v2/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Git-%EC%84%A4%EC%B9%98
 
 ### Windows
-1. [여기](http://git-scm.com/download/win)에서 "Click here to download" 링크 클릭
-2. 다운로드한 파일 실행
-  * 아래는 버전 2.35.1.2-64-bit 및 2.36.1-64-bit 기준으로 작성하였다. 최신 버전이 있다면 최신 버전을 받으면 된다.
-3. ![설치1](Screenshots/%EC%84%A4%EC%B9%981.PNG)
-  * "Only show new options"를 체크하지 **않고** "Next" 클릭
-4. 설치 경로 지정
-5. ![설치2](Screenshots/%EC%84%A4%EC%B9%982-1.PNG)
-  * 위 사진처럼 체크하고 "Next" 클릭
-    * Windows Explorer integration 체크
-      * Git Bash Here 체크
-      * Git GUI Here 체크
-    * Git LFS (Large File Support) 체크
-    * Associate .git* configuration files with the default text editor 체크
-    * Associate .sh files to be run with Bash 체크
-    * (NEW!) Add a Git Bash Profile to Windows Terminal **체크**
-  * 다른 옵션도 읽어보고 필요하면 체크해도 괜찮다.
-6. 시작 메뉴에 폴더 만들 것인지 묻는 창이 뜬다면, "Next" 클릭
-7. ![설치3](Screenshots/%EC%84%A4%EC%B9%983.PNG)
-  * **Visual Studio Code**가 설치되어 있는 경우 위 사진처럼 Code를 사용할 수 있고, 아니면 메모장(Notepad)이나 본인이 편한 에디터(Vim 등)로 설정하면 된다.
-  * 나중에 커밋 메시지를 작성하거나 머지 커밋이 발생할 때 여기서 설정했던 에디터가 열린다.
-8. ![설치4](Screenshots/%EC%84%A4%EC%B9%984.PNG)
-  * 위 사진처럼 **두 번째 항목에 체크**하고 초기 브랜치 이름이 `main`으로 적혀 있는지 확인하고 "Next" 클릭
-  * 현재 GitHub의 주 브랜치 이름의 기본값은 `main`이다.
-    * 예전에는 새 레포지토리의 주 브랜치 이름이 `master`였다.
-  * 이미 Git을 사용하고 있었다면, 이 옵션을 변경하여 새로 설치해도 기존 레포지토리에는 영향을 주지 않는다.
-9. ![설치5](Screenshots/%EC%84%A4%EC%B9%985.PNG)
-  * 중간에 "(Recommended)"된 두 번째 항목에 체크하고 "Next" 클릭
-10. ![설치6](Screenshots/%EC%84%A4%EC%B9%986.PNG)
-  * 위 사진처럼 첫 번째 항목에 체크하고 "Next" 클릭
-11. ![설치7](Screenshots/%EC%84%A4%EC%B9%987.PNG)
-  * 위 사진처럼 첫 번째 항목에 체크하고 "Next" 클릭
-12. ![설치8](Screenshots/%EC%84%A4%EC%B9%988.PNG)
-  * Windows 사용자라면 위 사진처럼 첫 번째 항목에 체크하고 "Next" 클릭
-13. ![설치9](Screenshots/%EC%84%A4%EC%B9%989.PNG)
-  * 위 사진처럼 첫 번째 항목에 체크하고 "Next" 클릭
-  * 그러나 명령 프롬프트(cmd)를 너무나 사랑한다면 두 번째 항목에 체크하고 "Next" 클릭해도 된다. (비추천)
-14. ![설치10](Screenshots/%EC%84%A4%EC%B9%9810-1.PNG)
-  * 위 사진처럼 **두 번째 항목에 체크**하고 "Next" 클릭
-    * `git pull` 명령 사용 시 자동으로 `git pull --rebase` 명령을 사용한 것과 동일하게 처리한다.
-    * 머지 커밋이 불필요하게 쌓이는 것을 방지하기 때문에 추천한다.
-  * 머지 커밋을 남겨도 상관없는 경우 첫 번째 항목에 체크하고 "Next" 클릭
-    * 사람에 따라 머지 커밋이 기록으로 남는 게 지저분하다고 생각할 수 있다. 그러나 사실 그렇게 중요한 문제는 아니다.
-15. ![설치11](Screenshots/%EC%84%A4%EC%B9%9811.PNG)
-  * 위 사진처럼 첫 번째 항목에 체크하고 "Next" 클릭
-16. ![설치12](Screenshots/%EC%84%A4%EC%B9%9812.PNG)
-  * 위 사진처럼 첫 번째 항목에만 체크하고 "Next" 클릭
-17. ![설치13](Screenshots/%EC%84%A4%EC%B9%9813.PNG)
-  * 위 사진처럼 아무 항목도 체크하지 **않고** "Install" 클릭
-  * 각 항목을 읽어보고 써보고 싶다는 생각이 들면 체크해도 괜찮다.
+* **[자세한 설치법](./Install-Windows.md)**
+  * *문서가 너무 길어져서 따로 뺐습니다.*
+* 패키지 매니저를 통한 설치법
+  * `winget install -e --id Git.Git`
 
+### Linux (Ubuntu/Debian)
+* `sudo apt install git`
+
+### Mac
+* `brew install git`
 
 ## 사용법
 ### Windows
+#### Git Bash 이용
 * ![Git bash here](Screenshots/GitBashHere.PNG)
 * 프로젝트의 루트 폴더에서(또는 새 폴더를 생성하고 그 안에 들어가서) 파일 탐색기의 빈 공간을 마우스 우클릭 - Git Bash Here 실행
+* 후술할 Git 명령어를 상황에 맞게 입력
+
+#### Windows Terminal (PowerShell) 이용
+* Microsoft Store 앱 실행
+  * 아래 사진처럼 시작 메뉴에서 실행 가능
+  * ![Microsoft-Store](./Screenshots/WindowsTerminal1.PNG)
+* 아래 사진처럼 "Windows Terminal" 검색 후 다운로드
+  * ![Windows-Terminal](./Screenshots/WindowsTerminal2.PNG)
+* "Windows Terminal" 실행
+  * "Windows PowerShell"이 기본값으로 열린다.
+  * 다른 것이 열린다면 아래 사진처럼 아래 화살표 버튼을 누르고 "Windows PowerShell"을 실행한다.
+  * ![Windows-PowerShell](./Screenshots/WindowsTerminal3.PNG)
+* `cd "경로"` 명령을 통해 프로젝트의 루트 폴더로 이동
 * 후술할 Git 명령어를 상황에 맞게 입력
 
 ### Linux/Mac
@@ -100,46 +77,8 @@
 ## 명령어 상세
 ### 0. 초기 설정
 #### SSH 키 생성 및 GitHub에의 등록
-> 출처: https://www.lainyzine.com/ko/article/creating-ssh-key-for-github/
-1. Git Bash (Windows) 또는 터미널(Linux/Mac) 실행
-2. `cd ~/.ssh`
-3. `ls`
-   * `id_ed25519`와 `id_ed25519.pub`가 보이지 않으면 아래의 과정을 거쳐야 한다.
-   * 예전 Git 유저의 경우 `id_rsa`와 `id_rsa.pub`가 보일 수도 있는데, 이 경우에는 4. ~ 7. 과정을 생략해도 좋다.
-4. `ssh-keygen -t ed25519 -C "your_email@example.com"`
-   * `your_email@example.com` 부분은 자신의 이메일로 대체해서 적는다.
-   * ed25519 방식이 동작하지 않는 경우 대신 아래 명령을 입력한다.
-     * `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
-5. 어느 위치에 저장할 것인지 물어본다.
-   * 그냥 enter 키를 입력하면 기본값으로 설정되며 넘어간다.
-6. 비밀번호(passphrase)를 입력하라고 물어본다.
-   * 그냥 enter 키를 입력하면 비밀번호 없이 사용 가능하지만, 가급적이면 **비밀번호를 설정하는 것을 추천**한다.
-7. 한 번 더 비밀번호를 입력하라고 물어본다.
-   * 같은 비밀번호를 입력하면 된다.
-   * 앞에서 enter로 넘어갔다면 또 enter를 누르면 된다.
-8. 이제 아래 사진처럼 출력되면서 `~/.ssh/` 폴더 안에 SSH 키가 생성되었다.
-   * ![SSH2](./Screenshots/SSH2.PNG)
-   * Windows의 경우 기본값 위치는 `C:\사용자\계정 이름\.ssh\` 에 있을 것이다.
-   * ed25519 방식으로 생성한 경우 두 개의 파일 `id_ed25519`와 `id_ed25519.pub`가 생성된다.
-   * RSA 방식으로 생성한 경우 두 개의 파일 `id_rsa`와 `id_rsa.pub`가 생성된다.
-   * **주의: `id_ed25519` 또는 `id_rsa`의 내용은 절대 다른 사람에게 공개되어서는 안 된다!**
-     * 이것은 private key라고 부른다.
-   * `id_ed25519.pub` 또는 `id_rsa.pub`의 내용은 다른 사람들에게 공개되어도 상관 없다.
-     * 이것은 public key라고 부른다.
-9.  `id_ed25519.pub`의 내용물을 복사한다.
-    * Windows에서는 `clip < ~/.ssh/id_ed25519.pub` 실행
-    * Mac에서는 `pbcopy < ~/.ssh/id_ed25519.pub` 실행
-10. [GitHub](https://github.com)에 접속하여 Sign in 한다.
-11. 아래 사진처럼 상단 오른쪽에 있는 자신의 초상화를 클릭하고 "Settings"를 클릭한다.
-    * ![SSH3](./Screenshots/SSH3.PNG)
-12. 아래 사진처럼 "SSH and GPG keys" 메뉴로 들어간다.
-    * ![SSH4](./Screenshots/SSH4.PNG)
-13. 오른쪽 위에 있는 초록색 "New SSH key" 버튼을 클릭한다.
-14. 아래 사진처럼 "Title"에는 자신이 알아볼 수 있도록 제목을 넣고, "Key"에는 위에서 복사한 `id_ed25519.pub`의 내용물을 붙여넣는다.
-    * ![SSH5](./Screenshots/SSH5.PNG)
-    * 필자는 개인적으로 "Title"에 컴퓨터 종류를 적는다.
-15. 아래 초록색 "Add SSH key" 버튼을 클릭한다.
-    * 이제 이 컴퓨터에서 SSH를 통한 GitHub 접근이 가능하다!
+* **[자세한 안내](./SSH.md)**
+  * *문서가 너무 길어져서 따로 뺐습니다.*
 
 #### 계정 아이덴티티 설정
 1. Git Bash (Windows) 또는 터미널(Linux/Mac) 실행
@@ -262,17 +201,19 @@
       * `git checkout --theirs -- [충돌한 파일 경로]`
       * (띄어쓰기에 유의)
     * 모든 충돌을 해결했으면 `git push` 명령어를 입력한다. 이때 커밋 메시지 에디터가 뜰 수 있는데, 에디터를 닫아주면 정상적으로 머지 커밋과 `git push`가 진행된다.
-  * Unity의 `.unity`(scene) 파일
-    * 가급적이면 `.unity` 파일에서 머지 컨플릭트가 발생하지 않도록 일감과 일정을 분배하는 것이 중요하다.
+  * Unity의 `.unity`(scene) 파일 및 `.prefab`(프리팹) 파일
+    * 가급적이면 `.unity` 파일 및 `.prefab` 파일에서 머지 컨플릭트가 발생하지 않도록 일감과 일정을 분배하는 것이 중요하다.
+      * 한 번에 한 사람만 건드리도록 하고, 동시에 여러 명이 같은 파일을 가지고 작업하지 않아야 한다.
     * 그래도 머지 컨플릭트가 발생했다면 아래의 세 가지 방법으로 해결할 수 있다.
-      1. 텍스트 기반 파일처럼  **텍스트 편집기로** 해당 파일을 열고 머지 컨플릭트를 수동으로 해결하는 방법
-         * Unity 에디터로 열지 않음에 유의!
-         * `.unity` 파일이 기본적으로 yaml 구조라서 가능하다.
-         * 굉장히 난이도가 높은 방법이다.
-         * 잘못 병합하면 scene 파일 구조가 깨져서 Unity로 열리지 않게 될 수 있다!
+      1. 내가 해당 scene에 새로 만든 변경사항들을 패치노트처럼 전부 기억한 다음, 원격 레포지토리의 최신 버전(내 것과 충돌한 버전)을 만들어낸 상대방의 컴퓨터에서 Unity 에디터로 해당 scene을 열어서, 내가 만들었던 변경사항들을 똑같이 수동으로 반영하고 그것으로 덮어쓰는 방법
+         * **가장 추천하는 방법!**
       2. 바이너리 파일처럼 두 변경사항 중 하나를 취사선택하는 방법
          * 이 경우 한 쪽의 변경사항은 전부 버려지게 된다.
-      3. 내가 해당 scene에 새로 만든 변경사항들을 패치노트처럼 전부 기억한 다음, 원격 레포지토리의 최신 버전(내 것과 충돌한 버전)을 만들어낸 상대방의 컴퓨터에서 Unity 에디터로 해당 scene을 열어서, 내가 만들었던 변경사항들을 똑같이 수동으로 반영하고 그것으로 덮어쓰는 방법
+      3. 텍스트 기반 파일처럼  **텍스트 편집기로** 해당 파일을 열고 머지 컨플릭트를 수동으로 해결하는 방법 **(절대 비추천)**
+         * Unity 에디터로 열지 않음에 유의!
+         * `.unity` 파일이 기본적으로 yaml 구조라서 가능하긴 하지만...
+         * 사용자는 Unity가 내부적으로 관리하는 에셋 ID를 알 방법이 없고, 이것이 꼬이면 굉장히 큰일이 난다.
+         * 잘못 병합하면 scene 파일 구조가 깨져서 Unity로 열리지 않게 될 수 있다!
     * 모든 충돌을 해결했으면 `git push` 명령어를 입력한다. 이때 커밋 메시지 에디터가 뜰 수 있는데, 에디터를 닫아주면 정상적으로 머지 커밋과 `git push`가 진행된다.
 
 ### 6. 브랜치를 변경할 때
@@ -285,6 +226,7 @@
    * 브랜치를 변경하면 로컬 작업 환경의 파일들이 새 브랜치에 맞게 통째로 바뀐다.
    * 따라서 브랜치 변경 전에, 반드시 모든 파일을 저장하고 [로컬 작업 환경의 변경사항을 로컬 레포지토리에 반영할 때](#2-로컬-작업-환경의-변경사항을-로컬-레포지토리에-반영할-때)의 명령어를 모두 수행하여야 한다.
    * 이 명령을 수행하면 브랜치가 변경되지만, 해당 브랜치가 존재하지 않고 새로 만들어야 하는 경우에는 3. 이하를 수행한다.
+   * *Git 2.25부터 `git checkout` 명령어가 `git switch` 및 `git restore`의 두 명령어로 분리되었다. 그러나 아직은 `git checkout`을 사용해도 된다.*
 3. `git branch`
    * 로컬 레포지토리에 있는 브랜치 목록을 보여준다.
 4. `git checkout -b [새 브랜치 이름]`
@@ -357,6 +299,8 @@
   * **꽤 자주 사용하는 명령이다.**
 * `git log --graph`
   * 그래프 형식으로 브랜치의 흐름을 좀 더 자세하게 볼 때 유용하다.
+* `git log --all --decorate --oneline --graph`
+  * 그래프 형식으로 **아주 예쁘게** 브랜치의 흐름을 그려준다.
 * `git diff`
   * `git add`를 아직 하지 않은 상황에서 수정된 파일이 있다면, 마지막 커밋과 현재 로컬 작업 환경 사이의 변경사항을 확인할 수 있다.
   * 아무 변경사항이 없으면 아무 것도 출력되지 않는다.
@@ -406,8 +350,3 @@
 * `git commit -m "[커밋 메시지]"`
 * `git push -u origin [현재 브랜치 이름]`
 * GitHub에 들어가서, 내 브랜치(compare)에서 `main` 브랜치(base)로의 풀 리퀘스트(PR) 생성
-
----
-
-## 작성자
-* 안단태 (https://github.com/salt26)
