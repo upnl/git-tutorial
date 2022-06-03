@@ -11,7 +11,7 @@ Git을 설치한 후 터미널을 세팅하였으면 이제 Git 명령어를 칠
 
 ## 사용자 정보
 Git을 설치한 후 가장 먼저 할 일은 사용자 이름과 이메일 주소를 설정하는 것이다.  
-터미널을 실행한 후, 다음을 입력한다. `[you@example.com]` 부분을 자신의 이메일로 대체해서 적으면 된다.
+터미널을 실행한 후, 다음을 입력한다. `[you@example.com]` 및 [Your Name] 부분에 자신의 이메일과 이름을 적으면 된다.
 
 ```
 `git config --global user.email "[you@example.com]"`
