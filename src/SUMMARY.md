@@ -9,8 +9,8 @@
   - [바이너리 파일을 받아 설치](install/binary.md)
 - [세팅](setting/README.md)
   - [터미널 세팅](setting/terminal.md)
-  - [SSH 키 생성 및 GitHub에 등록](setting/ssh.md)
   - [계정 아이덴티티 설정](setting/identity.md)
+  - [SSH 키 생성 및 GitHub에 등록](setting/ssh.md)
 
 # Usage
 
