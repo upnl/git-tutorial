@@ -11,9 +11,11 @@ Windows 에서는 Git 설치 시 Git Bash가 기본으로 설치가 된다.
 ![Git bash here](../images/GitBashHere.PNG)
 
 ### Windows Terminal (PowerShell) 이용
-Windows 에서 제공하는 차세대 터미널인 [Windows Terminal] 을 사용한다.  
-Microsoft Store를 실행한 후, "Windows Termianl" 을 검색하여 설치 후 실행하면 된다.  
-기본값으로 Windows PowerShell 이 열리는데, 만약 다른 것이 열린다면 아래 화살표 버튼을 누르고 Windows PowerShell 을 실행한다.
+Windows 에서 제공하는 차세대 터미널인 [Windows Terminal] 을 사용한다.
+이는 Microsoft Store를 실행한 후, "Windows Terminal" 을 검색하여 설치하여 사용할 수 있다.
+
+실행 시 기본값으로 Windows PowerShell 이 열린다. 
+만약 다른 것이 열린다면 아래 화살표 버튼을 누르고 Windows PowerShell 을 실행한다.
 
 ![Microsoft-Store](../images/WindowsTerminal1.PNG)
 ![Windows-Terminal](../images/WindowsTerminal2.PNG)
