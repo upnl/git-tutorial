@@ -13,11 +13,11 @@ Git을 설치한 후 터미널을 세팅하였으면 이제 Git 명령어를 칠
 Git을 설치한 후 가장 먼저 할 일은 사용자 이름과 이메일 주소를 설정하는 것이다.
 
 터미널을 실행한 후, 다음을 입력한다.  
-`your_name` 및 `you@example.com` 부분에 자신의 이름과 이메일을 적으면 된다.
+`[your_name]` 및 `[you@example.com]` 부분에 자신의 이름과 이메일을 적으면 된다.
 
 ```
-`git config --global user.name "your_name"`
-`git config --global user.email "you@example.com"`
+git config --global user.name "[your_name]"
+git config --global user.email "[you@example.com]"
 ```
 
 `--global` 옵션은 현재 사용자의 모든 레포지토리에 같은 아이덴티티를 적용하겠다는 의미이다.
