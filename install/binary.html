@@ -3,33 +3,33 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Install-Windows - Git Tutorial</title>
+        <title>바이너리 파일을 받아 설치 - Git Tutorial</title>
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="UPnL 신입회원을 위한 Git 튜토리얼">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        <link rel="icon" href="favicon.svg">
-        <link rel="shortcut icon" href="favicon.png">
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
     </head>
     <body>
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
-            var path_to_root = "";
+            var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">README</a></li><li class="chapter-item expanded affix "><a href="Install-Windows.html" class="active">Install-Windows</a></li><li class="chapter-item expanded affix "><a href="SSH.html">SSH</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">설치 및 세팅</li><li class="chapter-item expanded "><a href="../install/index.html"><strong aria-hidden="true">1.</strong> 설치</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../install/package-manager.html"><strong aria-hidden="true">1.1.</strong> 패키지 관리자를 사용하여 설치</a></li><li class="chapter-item expanded "><a href="../install/binary.html" class="active"><strong aria-hidden="true">1.2.</strong> 바이너리 파일을 받아 설치</a></li></ol></li><li class="chapter-item expanded "><a href="../setting/index.html"><strong aria-hidden="true">2.</strong> 세팅</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../setting/terminal.html"><strong aria-hidden="true">2.1.</strong> 터미널 세팅</a></li><li class="chapter-item expanded "><a href="../setting/identity.html"><strong aria-hidden="true">2.2.</strong> 계정 아이덴티티 설정</a></li><li class="chapter-item expanded "><a href="../setting/ssh.html"><strong aria-hidden="true">2.3.</strong> SSH 키 생성 및 GitHub에 등록</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Usage</li><li class="chapter-item expanded "><a href="../usage/index.html"><strong aria-hidden="true">3.</strong> 사용법</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../usage/contents.html"><strong aria-hidden="true">3.1.</strong> 내용</a></li></ol></li><li class="chapter-item expanded "><a href="../usage/summary.html"><strong aria-hidden="true">4.</strong> 명령어 요약</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -107,7 +107,7 @@
                     <h1 class="menu-title">Git Tutorial</h1>
 
                     <div class="right-buttons">
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                     </div>
@@ -134,140 +134,53 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h2 id="git-설치"><a class="header" href="#git-설치">Git 설치</a></h2>
-<ul>
-<li><a href="./index.html#%EC%84%A4%EC%B9%98">이전으로 돌아가기</a></li>
-</ul>
-<h3 id="windows"><a class="header" href="#windows">Windows</a></h3>
+                        <h1 id="바이너리-파일을-받아-설치"><a class="header" href="#바이너리-파일을-받아-설치">바이너리 파일을 받아 설치</a></h1>
+<p>Git 홈페이지에서 바이너리 파일을 받아 설치할 수도 있다. 이 경우 인스톨러에서 몇 가지 기본 설정을 도와준다.
+여기서는 Windows 를 기준으로 설명하며, 작성 시 사용한 버전은 <code>2.35.1.2-64-bit</code> 및 <code>2.36.1-64-bit</code> 버전이다.
+만약 최신 버전이 있다면 최신 버전을 받으면 된다.</p>
+<h2 id="windows"><a class="header" href="#windows">Windows</a></h2>
 <ol>
 <li><a href="http://git-scm.com/download/win">여기</a>에서 &quot;Click here to download&quot; 링크 클릭</li>
 <li>다운로드한 파일 실행</li>
-</ol>
-<ul>
-<li>아래는 버전 2.35.1.2-64-bit 및 2.36.1-64-bit 기준으로 작성하였다. 최신 버전이 있다면 최신 버전을 받으면 된다.</li>
-</ul>
-<ol start="3">
-<li><img src="Screenshots/%EC%84%A4%EC%B9%981.PNG" alt="설치1" /></li>
-</ol>
-<ul>
-<li>&quot;Only show new options&quot;를 체크하지 <strong>않고</strong> &quot;Next&quot; 클릭</li>
-</ul>
-<ol start="4">
+<li>&quot;Only show new options&quot;를 체크하지 <strong>않고</strong> &quot;Next&quot; 클릭
+<img src="../images/%EC%84%A4%EC%B9%981.PNG" alt="설치1" /></li>
 <li>설치 경로 지정</li>
-<li><img src="Screenshots/%EC%84%A4%EC%B9%982-1.PNG" alt="설치2" /></li>
-</ol>
-<ul>
-<li>위 사진처럼 체크하고 &quot;Next&quot; 클릭
-<ul>
-<li>Windows Explorer integration 체크
-<ul>
-<li>Git Bash Here 체크</li>
-<li>Git GUI Here 체크</li>
-</ul>
-</li>
-<li>Git LFS (Large File Support) 체크</li>
-<li>Associate .git* configuration files with the default text editor 체크</li>
-<li>Associate .sh files to be run with Bash 체크</li>
-<li>(NEW!) Add a Git Bash Profile to Windows Terminal <strong>체크</strong></li>
-</ul>
-</li>
-<li>다른 옵션도 읽어보고 필요하면 체크해도 괜찮다.</li>
-</ul>
-<ol start="6">
+<li>필요한 옵션을 체크한 후 &quot;Next&quot; 를 클릭한다. 다음은 그 예시이다.
+<img src="../images/%EC%84%A4%EC%B9%982-1.PNG" alt="설치2" /></li>
 <li>시작 메뉴에 폴더 만들 것인지 묻는 창이 뜬다면, &quot;Next&quot; 클릭</li>
-<li><img src="Screenshots/%EC%84%A4%EC%B9%983.PNG" alt="설치3" /></li>
+<li>사용할 에디터를 등록한다.<br />
+<strong>Visual Studio Code</strong>가 설치되어 있는 경우 위 사진처럼 Code를 사용할 수 있고, 아니면 메모장(Notepad)이나 본인이 편한 에디터(Vim 등)로 설정하면 된다.<br />
+나중에 커밋 메시지를 작성하거나 머지 커밋이 발생할 때 여기서 설정했던 에디터가 열린다.
+<img src="../images/%EC%84%A4%EC%B9%983.PNG" alt="설치3" /></li>
+<li>초기 브랜치 이름을 <code>main</code><sup class="footnote-reference"><a href="#note">1</a></sup> 으로 변경한 후 &quot;Next&quot; 클릭
+<img src="../images/%EC%84%A4%EC%B9%984.PNG" alt="설치4" /></li>
+<li>다음 사진들처럼 잘 선택한 후 &quot;Next&quot; 클릭
+<img src="../images/%EC%84%A4%EC%B9%985.PNG" alt="설치5" />
+<img src="../images/%EC%84%A4%EC%B9%986.PNG" alt="설치6" />
+<img src="../images/%EC%84%A4%EC%B9%987.PNG" alt="설치7" />
+<img src="../images/%EC%84%A4%EC%B9%988.PNG" alt="설치8" />
+<img src="../images/%EC%84%A4%EC%B9%989.PNG" alt="설치9" /></li>
+<li><code>git pull</code> 명령어의 기본 동작을 설정한다.<br />
+여러 이유로 기본값을 사용하는 것은 추천하지 않으며 2번 또는 3번을 체크하는 것을 권장한다.<br />
+여기서는 2번을 체크한다. 이는 <code>git pull</code> 입력 시 <code>git pull --rebase</code> 명령을 사용한 것과 동일하게 처리한다.<br />
+<img src="../images/%EC%84%A4%EC%B9%9810-1.PNG" alt="설치10" /></li>
+<li>다음 사진들처럼 잘 체크한 후 설치를 진행한다.
+<img src="../images/%EC%84%A4%EC%B9%9811.PNG" alt="설치11" />
+<img src="../images/%EC%84%A4%EC%B9%9812.PNG" alt="설치12" />
+<img src="../images/%EC%84%A4%EC%B9%9813.PNG" alt="설치13" /></li>
 </ol>
-<ul>
-<li><strong>Visual Studio Code</strong>가 설치되어 있는 경우 위 사진처럼 Code를 사용할 수 있고, 아니면 메모장(Notepad)이나 본인이 편한 에디터(Vim 등)로 설정하면 된다.</li>
-<li>나중에 커밋 메시지를 작성하거나 머지 커밋이 발생할 때 여기서 설정했던 에디터가 열린다.</li>
-</ul>
-<ol start="8">
-<li><img src="Screenshots/%EC%84%A4%EC%B9%984.PNG" alt="설치4" /></li>
-</ol>
-<ul>
-<li>위 사진처럼 <strong>두 번째 항목에 체크</strong>하고 초기 브랜치 이름이 <code>main</code>으로 적혀 있는지 확인하고 &quot;Next&quot; 클릭</li>
-<li>현재 GitHub의 주 브랜치 이름의 기본값은 <code>main</code>이다.
-<ul>
-<li>예전에는 새 레포지토리의 주 브랜치 이름이 <code>master</code>였다.</li>
-</ul>
-</li>
-<li>이미 Git을 사용하고 있었다면, 이 옵션을 변경하여 새로 설치해도 기존 레포지토리에는 영향을 주지 않는다.</li>
-</ul>
-<ol start="9">
-<li><img src="Screenshots/%EC%84%A4%EC%B9%985.PNG" alt="설치5" /></li>
-</ol>
-<ul>
-<li>중간에 &quot;(Recommended)&quot;된 두 번째 항목에 체크하고 &quot;Next&quot; 클릭</li>
-</ul>
-<ol start="10">
-<li><img src="Screenshots/%EC%84%A4%EC%B9%986.PNG" alt="설치6" /></li>
-</ol>
-<ul>
-<li>위 사진처럼 첫 번째 항목에 체크하고 &quot;Next&quot; 클릭</li>
-</ul>
-<ol start="11">
-<li><img src="Screenshots/%EC%84%A4%EC%B9%987.PNG" alt="설치7" /></li>
-</ol>
-<ul>
-<li>위 사진처럼 첫 번째 항목에 체크하고 &quot;Next&quot; 클릭</li>
-</ul>
-<ol start="12">
-<li><img src="Screenshots/%EC%84%A4%EC%B9%988.PNG" alt="설치8" /></li>
-</ol>
-<ul>
-<li>Windows 사용자라면 위 사진처럼 첫 번째 항목에 체크하고 &quot;Next&quot; 클릭</li>
-</ul>
-<ol start="13">
-<li><img src="Screenshots/%EC%84%A4%EC%B9%989.PNG" alt="설치9" /></li>
-</ol>
-<ul>
-<li>위 사진처럼 첫 번째 항목에 체크하고 &quot;Next&quot; 클릭</li>
-<li>그러나 명령 프롬프트(cmd)를 너무나 사랑한다면 두 번째 항목에 체크하고 &quot;Next&quot; 클릭해도 된다. (비추천)</li>
-</ul>
-<ol start="14">
-<li><img src="Screenshots/%EC%84%A4%EC%B9%9810-1.PNG" alt="설치10" /></li>
-</ol>
-<ul>
-<li>위 사진처럼 <strong>두 번째 항목에 체크</strong>하고 &quot;Next&quot; 클릭
-<ul>
-<li><code>git pull</code> 명령 사용 시 자동으로 <code>git pull --rebase</code> 명령을 사용한 것과 동일하게 처리한다.</li>
-<li>머지 커밋이 불필요하게 쌓이는 것을 방지하기 때문에 추천한다.</li>
-</ul>
-</li>
-<li>머지 커밋을 남겨도 상관없는 경우 첫 번째 항목에 체크하고 &quot;Next&quot; 클릭
-<ul>
-<li>사람에 따라 머지 커밋이 기록으로 남는 게 지저분하다고 생각할 수 있다. 그러나 사실 그렇게 중요한 문제는 아니다.</li>
-</ul>
-</li>
-</ul>
-<ol start="15">
-<li><img src="Screenshots/%EC%84%A4%EC%B9%9811.PNG" alt="설치11" /></li>
-</ol>
-<ul>
-<li>위 사진처럼 첫 번째 항목에 체크하고 &quot;Next&quot; 클릭</li>
-</ul>
-<ol start="16">
-<li><img src="Screenshots/%EC%84%A4%EC%B9%9812.PNG" alt="설치12" /></li>
-</ol>
-<ul>
-<li>위 사진처럼 첫 번째 항목에만 체크하고 &quot;Next&quot; 클릭</li>
-</ul>
-<ol start="17">
-<li><img src="Screenshots/%EC%84%A4%EC%B9%9813.PNG" alt="설치13" /></li>
-</ol>
-<ul>
-<li>위 사진처럼 아무 항목도 체크하지 <strong>않고</strong> &quot;Install&quot; 클릭</li>
-<li>각 항목을 읽어보고 써보고 싶다는 생각이 들면 체크해도 괜찮다.</li>
-</ul>
+<div class="footnote-definition" id="note"><sup class="footnote-definition-label">1</sup>
+<p>예전에는 리포지토리의 기본 브랜치 이름이 <code>master</code> 였으나, 지금은 <code>main</code> 을 사용하는 추세이다.</p>
+</div>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../install/package-manager.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                            <a rel="next" href="SSH.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../setting/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         <div style="clear: both"></div>
@@ -276,10 +189,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../install/package-manager.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                    <a rel="next" href="SSH.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../setting/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
@@ -289,12 +202,12 @@
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
     </body>
