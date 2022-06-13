@@ -29,4 +29,5 @@
 
 # Advanced
 
-- [브랜치 보호하기](advanced/protect-branch.md)
+- [심화 과정](advanced/README.md)
+  - [브랜치 보호하기](advanced/protect-branch.md)
