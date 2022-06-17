@@ -3,6 +3,9 @@
 
 > 머지 컨플릭트가 일어나면 Git에게 두 변경사항 중 어느 것을 반영하고 어느 것을 버려야 하는지 알려주어야 한다.
 
+![new commit and push](../images/BasicNewCommit.png)
+
+![merge conflict](../images/BasicMergeConflict.png)
 * 우선 `git status`를 입력해보자.
   * 충돌한 파일이 어떤 것들이 있는지 알려준다.
 * 충돌이 일어난 파일의 종류에 따라 해결 방법이 다르다.

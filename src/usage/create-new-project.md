@@ -1,4 +1,5 @@
 # 프로젝트를 새로 생성하기
+![fetch and pull](../images/BasicFetch.png)
 1. GitHub에서 새로운 원격 레포지토리 생성
    * GitHub 홈페이지에 Sign in 후 New 버튼을 누르고 레포지토리 이름을 정해서 생성하면 된다.
 2. 아래 사진처럼 초록색 "Code" 버튼을 누르고 표시되는 주소 복사
