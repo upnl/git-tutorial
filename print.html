@@ -385,7 +385,36 @@ macOS 에서는 <code>cat ~/.ssh/id_ed25519.pub | pbcopy</code> 를 입력하여
 <li>로컬 레포지토리: 내 컴퓨터의 <code>.git</code> 폴더 안에서 Git이 관리하는 파일들을 말한다. 직접 수정할 수는 없지만 Git 명령어를 통해 조작할 수 있다.</li>
 <li>원격 레포지토리: GitHub 등 원격 서버에 저장되어 관리되는 파일들을 말한다. 다른 사용자들과 공유된다.</li>
 </ul>
+<h2 id="그림으로-이해하기"><a class="header" href="#그림으로-이해하기">그림으로 이해하기</a></h2>
+<ol>
+<li><img src="usage/../images/Basic.png" alt="init" /></li>
+</ol>
+<hr />
+<ol start="2">
+<li><img src="usage/../images/BasicFetch.png" alt="fetch and pull" /></li>
+</ol>
+<hr />
+<ol start="3">
+<li><img src="usage/../images/BasicCommit.png" alt="add and commit" /></li>
+</ol>
+<hr />
+<ol start="4">
+<li><img src="usage/../images/BasicPush.png" alt="push" /></li>
+</ol>
+<hr />
+<ol start="5">
+<li><img src="usage/../images/BasicPull.png" alt="pull" /></li>
+</ol>
+<hr />
+<ol start="6">
+<li><img src="usage/../images/BasicNewCommit.png" alt="new commit and push" /></li>
+</ol>
+<hr />
+<ol start="7">
+<li><img src="usage/../images/BasicMergeConflict.png" alt="merge conflict" /></li>
+</ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="프로젝트를-새로-생성하기"><a class="header" href="#프로젝트를-새로-생성하기">프로젝트를 새로 생성하기</a></h1>
+<p><img src="usage/../images/BasicFetch.png" alt="fetch and pull" /></p>
 <ol>
 <li>GitHub에서 새로운 원격 레포지토리 생성
 <ul>
@@ -470,6 +499,7 @@ macOS 에서는 <code>cat ~/.ssh/id_ed25519.pub | pbcopy</code> 를 입력하여
 <blockquote>
 <p>Git은 변경사항을 자동으로 추적하지 못한다. 따라서 어느 파일이 어떻게 바뀌었는지 Git에게 알려주는 작업이 필요하다.</p>
 </blockquote>
+<p><img src="usage/../images/BasicCommit.png" alt="add and commit" /></p>
 <ol>
 <li>브랜치가 내가 작업할 브랜치인지 확인
 <ul>
@@ -524,6 +554,7 @@ macOS 에서는 <code>cat ~/.ssh/id_ed25519.pub | pbcopy</code> 를 입력하여
 <blockquote>
 <p>변경사항을 서버에 올려서 다른 사람도 볼 수 있게 하는 작업이다.</p>
 </blockquote>
+<p><img src="usage/../images/BasicPush.png" alt="push" /></p>
 <ol>
 <li><code>git push -u origin [브랜치 이름]</code>
 <ul>
@@ -553,6 +584,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 </li>
 </ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="원격-저장소의-변경-사항을-로컬로-가져오기"><a class="header" href="#원격-저장소의-변경-사항을-로컬로-가져오기">원격 저장소의 변경 사항을 로컬로 가져오기</a></h1>
+<p><img src="usage/../images/BasicPull.png" alt="pull" /></p>
 <ol>
 <li><code>git fetch origin</code>
 <ul>
@@ -595,6 +627,8 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 <blockquote>
 <p>머지 컨플릭트가 일어나면 Git에게 두 변경사항 중 어느 것을 반영하고 어느 것을 버려야 하는지 알려주어야 한다.</p>
 </blockquote>
+<p><img src="usage/../images/BasicNewCommit.png" alt="new commit and push" /></p>
+<p><img src="usage/../images/BasicMergeConflict.png" alt="merge conflict" /></p>
 <ul>
 <li>우선 <code>git status</code>를 입력해보자.
 <ul>
