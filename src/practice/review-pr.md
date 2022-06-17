@@ -4,7 +4,7 @@
 * "Open pull requests" 중 자신이 올리지 않은 것 하나를 선택한다.
 * 올라온 코멘트가 있는지, 머지가 자연스럽게 가능한지 확인한다.
   * 초록색으로 "This branch has no conflicts with the base branch"가 표시되면 큰 문제 없이 머지가 가능한 것이다.
-  * 회색으로 "This branch ahs conflicts that must be resolved"가 표시되면 "Resolve conflicts" 버튼을 눌러보자. **머지 컨플릭트를 해결**해야 하기 때문이다.
+  * 회색으로 "This branch has conflicts that must be resolved"가 표시되면 "Resolve conflicts" 버튼을 눌러보자. **머지 컨플릭트를 해결**해야 하기 때문이다.
 >    * 이번 실습에서는, 가장 먼저 PR을 날린 사람의 것은 자연스럽게 머지가 되겠지만 그 뒤에 PR을 날린 사람들은 모두 머지 컨플릭트가 나도록 의도하였다.
 * "Files changed" 탭으로 이동한다.
   * 변경 사항들을 쭉 보면서 각 파일의 어떤 부분이 어떻게 바뀌었는지 확인한다.
