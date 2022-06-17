@@ -6,7 +6,6 @@
   * 초록색으로 "This branch has no conflicts with the base branch"가 표시되면 큰 문제 없이 머지가 가능한 것이다.
   * 회색으로 "This branch ahs conflicts that must be resolved"가 표시되면 "Resolve conflicts" 버튼을 눌러보자. **머지 컨플릭트를 해결**해야 하기 때문이다.
 >    * 이번 실습에서는, 가장 먼저 PR을 날린 사람의 것은 자연스럽게 머지가 되겠지만 그 뒤에 PR을 날린 사람들은 모두 머지 컨플릭트가 나도록 의도하였다.
->    * 머지 컨플릭트를 GitHub 안에서 해결하는 방법에 관한 공식 문서는 [여기](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)를 참조
 * "Files changed" 탭으로 이동한다.
   * 변경 사항들을 쭉 보면서 각 파일의 어떤 부분이 어떻게 바뀌었는지 확인한다.
   * 이 변경 사항들이 `main` 브랜치에 합쳐졌을 때 문제가 발생할 여지가 있는지 확인한다.
@@ -14,7 +13,7 @@
 ## 머지 컨플릭트 해결하기
 > * 참고: 사용법에 [머지 컨플릭트 해결법](../usage/merge-conflict.md) 문서가 있다.
 >   * 위 링크의 문서는 `git pull`을 하다가 로컬 환경에서 머지 컨플릭트를 해결해야 하는 경우를 다룬다.
-> * 이번 실습에서는 GitHub 내에서 해결하는 방법을 다뤄보겠다.
+> * 이번 실습에서는 GitHub 내에서 해결하는 방법을 다뤄보겠다. 공식 문서는 [여기](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)를 참조하라.
 
 * 머지 컨플릭트가 난 상황에서는 해당 파일의 해당 위치에 `<<<<<<<`, `=======`, `>>>>>>>` 표시가 생겨 있다.
   * `<<<<<<<`와 `=======` 사이에는 PR을 날린 사람의 이름이 적혀 있을 것이고, `=======`와 `>>>>>>>` 사이에는 이미 `main` 브랜치에 반영된 다른 사람들의 이름이 적혀 있을 것이다.
