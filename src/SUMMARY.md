@@ -2,7 +2,7 @@
 
 [Introduction](README.md)
 
-# 설치 및 세팅
+# Install and Setting
 
 - [설치](install/README.md)
   - [패키지 관리자를 사용하여 설치](install/package-manager.md)
@@ -31,3 +31,13 @@
 
 - [심화 과정](advanced/README.md)
   - [브랜치 보호하기](advanced/protect-branch.md)
+
+# Practice
+
+- [실습](practice/README.md)
+  - [레포지토리 복제하기](practice/clone.md)
+  - [파일 수정하기](practice/modify.md)
+  - [Git 사용하기](practice/use-git.md)
+  - [풀 리퀘스트(PR) 날리기](practice/create-pr.md)
+  - [풀 리퀘스트(PR) 리뷰 및 승인하기](practice/review-pr.md)
+  - [마무리](practice/end.md)
