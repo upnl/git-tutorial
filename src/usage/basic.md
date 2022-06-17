@@ -6,9 +6,15 @@
 
 ## 그림으로 이해하기
 1. ![init](../images/Basic.png)
+---
 2. ![fetch and pull](../images/BasicFetch.png)
+---
 3. ![add and commit](../images/BasicCommit.png)
+---
 4. ![push](../images/BasicPush.png)
+---
 5. ![pull](../images/BasicPull.png)
+---
 6. ![new commit and push](../images/BasicNewCommit.png)
+---
 7. ![merge conflict](../images/BasicMergeConflict.png)

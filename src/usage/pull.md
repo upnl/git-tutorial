@@ -1,5 +1,7 @@
 # 원격 저장소의 변경 사항을 로컬로 가져오기
+
 ![pull](../images/BasicPull.png)
+
 1. `git fetch origin`
    * 원격 레포지토리의 변경사항이 로컬 레포지토리에 반영된다.
 2. `git pull origin [현재 브랜치 이름]` 또는 간단히 `git pull`

@@ -6,6 +6,7 @@
 ![new commit and push](../images/BasicNewCommit.png)
 
 ![merge conflict](../images/BasicMergeConflict.png)
+
 * 우선 `git status`를 입력해보자.
   * 충돌한 파일이 어떤 것들이 있는지 알려준다.
 * 충돌이 일어난 파일의 종류에 따라 해결 방법이 다르다.
