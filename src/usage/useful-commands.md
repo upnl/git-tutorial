@@ -25,11 +25,19 @@
   * **위험한** 명령이므로 신중하게 사용해야 한다.
 * `git clone [원격 레포지토리의 SSH 또는 HTTPS 주소 붙여넣기]`
   * 다른 사람의 public 원격 레포지토리에서 코드 전체를 내려받을 때 사용한다.
-  * 이 명령을 사용하면 해당 레포지토리에 변경을 가하고 `git push`하는 것은 불가능할 수도 있다.
-    * 수정 작업에 참여할 레포지토리라면, 수정 권한을 얻은 후에 `git remote add origin [원격 레포지토리의 SSH 또는 HTTPS 주소 붙여넣기]`으로 내려받아야 한다.
-    * [여기](https://www.lainyzine.com/ko/article/git-clone-command/)를 참조하면 좋다.
+  * `git clone` 명령은 다음 명령들을 모두 입력한 것과 거의 비슷한 동작을 하는 명령이다.
+    * `git init`
+    * `git remote add origin [레포지토리 SSH 주소]`
+    * `git fetch origin`
+    * `git pull origin main`
+    * `git branch --set-upstream-to=origin/main main` (원격 브랜치 `main`를 자동으로 추적하도록 하는 명령)
+    * 추가로 원격 레포지토리에 있는 모든 브랜치를 자동으로 추적하도록 해준다.
+  * `git clone`에 익숙해지면 처음 레포지토리를 가져올 때 위의 귀찮은 명령들(`init`, `remote add`, `fetch`, `pull` 등)을 전부 입력하지 않아도 된다.
+  * `git clone` 관련 [공식 문서](https://git-scm.com/docs/git-clone) 및 [한글 문서](https://www.lainyzine.com/ko/article/git-clone-command/)를 참조하면 좋다.
 * `git remote -v`
   * 로컬 레포지토리가 어떤 원격 레포지토리와 연결되어 있는지 확인할 수 있다.
+* `git remote show origin`
+  * 어떤 원격 브랜치가 추적되고 있는지, `git pull`과 `git push`가 로컬과 원격 사이에 어떻게 연결되어 있는지 자세히 확인할 수 있다.
 * `git merge [머지할 브랜치 이름]`
   * 현재 브랜치에 반영되지 않은, 머지할 브랜치의 커밋들을 현재 브랜치에 병합한다.
   * 머지 방식에 따라 "fast-forward", "recursive" 등의 전략이 존재한다.
