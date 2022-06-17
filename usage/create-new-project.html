@@ -138,7 +138,40 @@
 <ol>
 <li>GitHub에서 새로운 원격 레포지토리 생성
 <ul>
-<li>GitHub 홈페이지에 Sign in 후 New 버튼을 누르고 레포지토리 이름을 정해서 생성하면 된다.</li>
+<li>GitHub 홈페이지에 Sign in 후 New 버튼을 누른다.</li>
+<li><img src="../images/NewRepository.PNG" alt="새 레포지토리 생성" /></li>
+<li>위 사진에서 &quot;Repository name&quot;에 새 레포지토리의 이름을 정한다.
+<ul>
+<li>보통 소문자로만 쓰고 띄어쓰기는 <code>-</code>로 대체하는 것이 일반적이다.</li>
+</ul>
+</li>
+<li>&quot;Description&quot;에 프로젝트 설명을 적는다. (선택사항)</li>
+<li>&quot;Public&quot; 또는 &quot;Private&quot;을 선택한다.
+<ul>
+<li>보안이 중요한 프로젝트가 아니라면 &quot;Public&quot; 선택을 추천한다. 기능이 더 많이 지원되기 때문이다.</li>
+</ul>
+</li>
+<li>&quot;Add a README file&quot;을 체크하면 좋다.
+<ul>
+<li>어차피 나중에 수정해야 하긴 하지만...</li>
+</ul>
+</li>
+<li><strong>&quot;Add .gitignore&quot;는 프로젝트의 종류에 맞게 선택해야 한다!</strong>
+<ul>
+<li>가령, Unity 프로젝트라면 &quot;Unity&quot;를 선택한다.</li>
+<li>이것을 선택하면 <code>.gitignore</code> 파일이 추가되고, 해당 프로젝트에서 자동으로 생기지만 레포지토리에 포함할 필요가 없는 파일들(무거운 빌드 파일 또는 임시 파일 등)을 자동으로 Git이 추적하지 않게 해준다.</li>
+<li><strong>적절한 <code>.gitignore</code>가 없으면 나중에 불편할 것이다.</strong></li>
+</ul>
+</li>
+<li>&quot;Choose a license&quot;에서는 보통 &quot;MIT License&quot;를 쓰거나, 아니면 선택하지 않기도 한다.
+<ul>
+<li>MIT License는 코드의 저작자만 명시한다면 코드의 복제, 수정, 상업적 이용 등을 허용하는, 매우 자유로운 라이선스이다.</li>
+<li>다른 라이선스를 선택할 수도 있지만, 제한 사항 등을 꼼꼼히 읽어보고 사용하는 것이 좋다.</li>
+<li>라이선스가 없으면 원 저작자에게 모든 권리가 귀속되므로, 공개(오픈 소스) 프로젝트에서는 보통 라이선스를 추가한다.</li>
+<li><a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository">공식 문서</a> 참조</li>
+</ul>
+</li>
+<li>완료되면 초록색 &quot;Create repository&quot; 버튼을 누른다.</li>
 </ul>
 </li>
 <li>아래 사진처럼 초록색 &quot;Code&quot; 버튼을 누르고 표시되는 주소 복사
@@ -171,6 +204,12 @@
 </ul>
 </li>
 <li>SSH 키 생성 시 비밀번호를 설정한 경우, 비밀번호를 입력해야 fetch 명령이 실행된다.</li>
+</ul>
+</li>
+<li><code>git pull origin main</code>
+<ul>
+<li>비밀번호를 설정한 경우, 비밀번호를 입력해야 pull 명령이 실행된다.</li>
+<li>레포지토리 생성 시 자동 생성된 파일들(<code>README.md</code>, <code>.gitignore</code>, <code>LICENSE</code> 등)을 로컬로 가져와준다.</li>
 </ul>
 </li>
 <li>로컬 작업 환경에서 파일 생성 및 수정</li>
