@@ -15,8 +15,9 @@
      * **적절한 `.gitignore`가 없으면 나중에 불편할 것이다.**
    * "Choose a license"에서는 보통 "MIT License"를 쓰거나, 아니면 선택하지 않기도 한다.
      * MIT License는 코드의 저작자만 명시한다면 코드의 복제, 수정, 상업적 이용 등을 허용하는, 매우 자유로운 라이선스이다.
-     * 다른 라이선스를 선택할 수도 있지만, 제한 사항이 많이 존재할 수 있다.
-     * 라이선스가 없으면 공개 프로젝트에서는 문제가 될 수도 있다.
+     * 다른 라이선스를 선택할 수도 있지만, 제한 사항 등을 꼼꼼히 읽어보고 사용하는 것이 좋다.
+     * 라이선스가 없으면 원 저작자에게 모든 권리가 귀속되므로, 공개(오픈 소스) 프로젝트에서는 보통 라이선스를 추가한다.
+     * [공식 문서](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) 참조
    * 완료되면 초록색 "Create repository" 버튼을 누른다.
 2. 아래 사진처럼 초록색 "Code" 버튼을 누르고 표시되는 주소 복사
    * ![주소 복사](../images/%EC%A3%BC%EC%86%8C%EB%B3%B5%EC%82%AC.PNG)
