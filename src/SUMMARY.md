@@ -2,13 +2,14 @@
 
 [Introduction](README.md)
 
-# Install and Setting
+# Background and Setting
 
-- [설치](install/README.md)
-  - [패키지 관리자를 사용하여 설치](install/package-manager.md)
-  - [바이너리 파일을 받아 설치](install/binary.md)
+- [배경]()
+  - [버전 관리 시스템이란?]()
+  - [Git의 기초]()
 - [세팅](setting/README.md)
   - [터미널 세팅](setting/terminal.md)
+  - [Git 설치](setting/install-git.md)
   - [계정 아이덴티티 설정](setting/identity.md)
   - [SSH 키 생성 및 GitHub에 등록](setting/ssh.md)
 
