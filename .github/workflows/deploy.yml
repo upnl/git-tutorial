@@ -1,7 +1,10 @@
-name: deploy
+name: Build and deploy
 
 on:
   push:
+    branches:
+      - main
+  pull_request:
     branches:
       - main
   workflow_dispatch:
@@ -32,9 +35,16 @@ jobs:
         run: |
           mdbook-mermaid install .
           mdbook build .
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: book-artifacts
+          path: book/
+          retention-days: 14
       - name: Restore .git directory
         run: cp -r .git-book book/.git
       - name: Commit build artifacts
+        if: ${{ github.event_name == 'push' }}
         run: |
           cd book
           git config user.name ${GITHUB_ACTOR}
@@ -42,6 +52,7 @@ jobs:
           git add .
           git commit -m "Update page"
       - name: Push and deploy
+        if: ${{ github.event_name == 'push' }}
         run: |
           cd book
           REPO="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
