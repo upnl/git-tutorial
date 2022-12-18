@@ -1,7 +1,10 @@
-name: deploy
+name: Build and deploy
 
 on:
   push:
+    branches:
+      - main
+  pull_request:
     branches:
       - main
   workflow_dispatch:
@@ -19,14 +22,29 @@ jobs:
           path: book
       - name: Copy .git directory
         run: cp -r book/.git .git-book
-      - name: Download mdBook binaries and build
+      - name: Download mdBook binaries
+        env:
+          MDBOOK_VERSION: v0.4.21
+          MDBOOK_MERMAID_VERSION: v0.12.3
         run: |
           mkdir bin
-          curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.4.18/mdbook-v0.4.18-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=bin
-          bin/mdbook build
+          curl -sSL https://github.com/rust-lang/mdBook/releases/download/${MDBOOK_VERSION}/mdbook-${MDBOOK_VERSION}-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=bin
+          curl -sSL https://github.com/badboy/mdbook-mermaid/releases/download/${MDBOOK_MERMAID_VERSION}/mdbook-mermaid-${MDBOOK_MERMAID_VERSION}-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=bin
+          echo "${PWD}/bin" >> $GITHUB_PATH
+      - name: Build
+        run: |
+          mdbook-mermaid install .
+          mdbook build .
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: book-artifacts
+          path: book/
+          retention-days: 14
       - name: Restore .git directory
         run: cp -r .git-book book/.git
       - name: Commit build artifacts
+        if: ${{ github.event_name == 'push' }}
         run: |
           cd book
           git config user.name ${GITHUB_ACTOR}
@@ -34,6 +52,7 @@ jobs:
           git add .
           git commit -m "Update page"
       - name: Push and deploy
+        if: ${{ github.event_name == 'push' }}
         run: |
           cd book
           REPO="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"

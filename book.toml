@@ -5,3 +5,13 @@ description = "UPnL 신입회원을 위한 Git 튜토리얼"
 language = "ko"
 multilingual = false
 src = "src"
+
+[preprocessor]
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+
+[output]
+
+[output.html]
+additional-js = ["mermaid.min.js", "mermaid-init.js"]
