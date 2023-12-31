@@ -36,15 +36,11 @@ Git은 원래 기본 브랜치 이름으로 `master`라는 이름을 사용하�
 $ git config --global init.defaultBranch main
 ```
 
-### Git Pull 기본 동작 변경
+### Git Pull 기본 동작
 
 Git에서는 원격에서 업데이트가 된 데이터를 로컬에 반영할 때 `git pull` 명령어를 사용한다. 하지만 이 명령어의 기본 동작은
 Pull의 동작을 정확히 이해하지 못한 채 사용해서는 안된다. 정석은 `ff-only` 모드를 사용하는 것이지만, 여기서는 편의상
-`rebase` 모드를 사용한다.
-
-```console
-$ git config --global pull.rebase true
-```
+defalut 모드를 사용한다. 자세한 내용은 [공식 문서](https://git-scm.com/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-Rebase-%ED%95%98%EA%B8%B0) 또는 [한글 문서](https://sanghye.tistory.com/43)를 참조하기 바란다.
 
 ## 설정 확인
 
@@ -54,6 +50,5 @@ $ git config --global pull.rebase true
 $ git config --list
 user.email=[REDACTED]
 user.name=[REDACTED]
-init.defaultbranch=main
-pull.rebase=true
+init.defaultBranch=main
 ```
