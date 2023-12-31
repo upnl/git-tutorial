@@ -7,7 +7,7 @@
 * 현재 사용자에게 적용되는 설정인 `~/.gitconfig`
 * 현재 디렉토리에만 적용되는 설정인 `.git/config`
 
-설정 파일은 `.git/config` 파일이 `~.gitconfig` 파일보다 우선시 된다.
+설정 파일은 `.git/config` 파일이 `~/.gitconfig` 파일보다 우선시 된다.
 
 ## Git 설정하기
 
